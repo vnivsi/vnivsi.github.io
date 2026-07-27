@@ -31,9 +31,13 @@ body {
 
     color:#222;
 
+    text-align:center;
+
 }
 
 
+
+/* Avatar */
 
 .avatar {
 
@@ -49,11 +53,13 @@ body {
 
 
 
-h1 {
+/* Name */
+
+.name {
 
     margin-top:25px;
 
-    font-size:42px;
+    font-size:38px;
 
     font-weight:600;
 
@@ -61,35 +67,51 @@ h1 {
 
 
 
-h2 {
+/* Digital identity */
 
-    font-size:22px;
+.identity {
+
+    margin-top:20px;
+
+    font-size:20px;
+
+    line-height:1.7;
 
     font-weight:400;
 
-    line-height:1.6;
+}
+
+
+
+.identity-cn {
+
+    margin-top:8px;
 
 }
 
 
 
-h3 {
+/* Navigation */
 
-    margin-top:40px;
+.navigation {
+
+    margin-top:45px;
+
+    padding-top:25px;
+
+    border-top:1px solid #ddd;
+
+    font-size:16px;
 
 }
 
 
 
-ul {
+.navigation a {
 
-    padding-left:20px;
+    display:inline-block;
 
-}
-
-
-
-a {
+    margin:6px 8px;
 
     color:#333;
 
@@ -99,7 +121,7 @@ a {
 
 
 
-a:hover {
+.navigation a:hover {
 
     text-decoration:underline;
 
@@ -107,7 +129,7 @@ a:hover {
 
 
 
-/* Hidden verification links for Mastodon */
+/* Hidden Mastodon verification */
 
 .verification {
 
@@ -131,48 +153,79 @@ a:hover {
 
 
 <img 
-class="avatar" 
-src="avatar.png" 
+class="avatar"
+src="avatar.png"
 alt="Liam avatar">
 
 
 
-<h1>
+<div class="name">
+
 Liam
-</h1>
+
+</div>
 
 
 
-<h2>
+<div class="identity">
+
+
+<div>
+
 vnivsi · Liam's personal digital identity in an ever-evolving cyber world.
-</h2>
+
+</div>
+
+
+<div class="identity-cn">
+
+vnivsi · Liam 在不断演进的赛博世界中的个人数字身份。
+
+</div>
+
+
+</div>
 
 
 
-<h3>
-Identity
-</h3>
 
 
-<ul>
+<div class="navigation">
 
 
-<li>
+<a href="#">
+首页 / Home
+</a>
+
+
+<a href="#">
+文字 / Blog
+</a>
+
+
+<a href="#">
+瞬间 / Moments
+</a>
+
+
+<a href="#">
+留言 / Messages
+</a>
+
+
+<a href="#">
+关于我 / About Me
+</a>
+
+
 <a href="https://github.com/vnivsi">
 GitHub
 </a>
-</li>
 
 
-
-<li>
-<a href="mailto:your@email.com">
-Email
-</a>
-</li>
+</div>
 
 
-</ul>
 
 
 
