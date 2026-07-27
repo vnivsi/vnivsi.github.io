@@ -2,31 +2,36 @@
 <html lang="zh-CN">
 
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Liam · vnivsi</title>
 
+
 <style>
+
 
 * {
     box-sizing: border-box;
 }
 
+
 body {
 
-    margin: 0;
+    margin:0;
 
-    background: #faf9f7;
+    background:#faf9f7;
 
-    color: #222;
+    color:#222;
 
     font-family:
-        "Inter",
-        "Noto Sans SC",
-        "Microsoft YaHei",
-        Arial,
-        sans-serif;
+    "Inter",
+    "Noto Sans SC",
+    "Microsoft YaHei",
+    Arial,
+    sans-serif;
 
     min-height:100vh;
 
@@ -37,7 +42,6 @@ body {
 }
 
 
-/* 主体 */
 
 .container {
 
@@ -53,7 +57,7 @@ body {
 
 
 
-/* 头像 */
+/* Avatar */
 
 .avatar {
 
@@ -65,9 +69,9 @@ body {
 
     object-fit:cover;
 
-    margin:0 auto 18px;
-
     display:block;
+
+    margin:0 auto 18px;
 
 }
 
@@ -107,9 +111,10 @@ body {
 
 
 
-/* 身份描述 */
+/* Digital identity */
 
 .identity {
+
 
     font-size:14px;
 
@@ -119,12 +124,12 @@ body {
 
     margin-bottom:30px;
 
+
 }
 
 
 
-/* 导航 */
-
+/* Navigation */
 
 .nav {
 
@@ -141,6 +146,7 @@ body {
     white-space:nowrap;
 
     margin-bottom:32px;
+
 
 }
 
@@ -166,7 +172,7 @@ body {
 
 
 
-/* 分割线 */
+/* Divider */
 
 .line {
 
@@ -182,9 +188,10 @@ body {
 
 
 
-/* 外链 */
+/* GitHub */
 
 .links a {
+
 
     color:#333;
 
@@ -192,7 +199,9 @@ body {
 
     font-size:14px;
 
+
 }
+
 
 
 .links a:hover {
@@ -203,11 +212,30 @@ body {
 
 
 
-/* Footer */
+/* Personal quote */
+
+.footer-accent {
+
+
+    color:rgb(255,106,0);
+
+    margin-top:30px;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+
+}
+
+
+
+/* Copyright */
 
 .footer {
 
-    margin-top:55px;
+
+    margin-top:45px;
 
     max-width:900px;
 
@@ -217,11 +245,12 @@ body {
 
     text-align:center;
 
-    color:#888;
+    color:#999;
 
-    font-size:13px;
+    font-size:11px;
 
-    line-height:1.9;
+    line-height:1.5;
+
 
 }
 
@@ -229,66 +258,43 @@ body {
 
 .footer-section {
 
-    margin-bottom:28px;
+
+    margin-bottom:18px;
+
 
 }
 
 
 
-.footer-title {
-
-    display:none;
-
-}
-
-
-
-.footer-accent {
-
-    color:rgb(255,106,0);
-
-    margin-top:25px;
-
-    font-size:14px;
-
-}
-
-
-
-/* 手机适配 */
 
 @media(max-width:600px){
 
-    .container {
 
-        padding:40px 18px;
+.container {
 
-    }
+    padding:40px 18px;
 
-
-    .nav {
-
-        flex-wrap:wrap;
-
-        white-space:normal;
-
-        gap:16px;
-
-    }
+}
 
 
-    .identity {
+.nav {
 
-        font-size:13px;
+    flex-wrap:wrap;
 
-    }
+    white-space:normal;
+
+    gap:16px;
+
+}
 
 
-    .footer {
 
-        font-size:12px;
+.footer {
 
-    }
+    font-size:11px;
+
+}
+
 
 }
 
@@ -298,183 +304,191 @@ body {
 </head>
 
 
+
 <body>
 
 
 <div class="container">
 
 
-    <!-- Avatar -->
 
-    <img class="avatar" src="avatar.png" alt="Liam Avatar">
+<img class="avatar" src="avatar.png" alt="Liam Avatar">
 
 
-    <!-- Name -->
 
-    <div class="name">
+<div class="name">
 
-        Liam
+Liam
 
-    </div>
+</div>
 
 
-    <div class="identity-name">
 
-        vnivsi
+<div class="identity-name">
 
-    </div>
+vnivsi
 
+</div>
 
 
-    <div class="identity">
 
-        Liam's personal digital identity in an ever-evolving cyber world.
+<div class="identity">
 
-        <br>
+Liam's personal digital identity in an ever-evolving cyber world.
 
-        Liam 的个人数字身份，于不断演进的赛博世界中探索。
+<br>
 
-    </div>
+Liam 的个人数字身份，于不断演进的赛博世界中探索。
 
+</div>
 
 
 
-    <!-- Navigation -->
 
 
-    <div class="nav">
+<div class="nav">
 
-        <a href="#">
-            首页 / Home
-        </a>
 
+<a href="#">
+首页 / Home
+</a>
 
-        <a href="#">
-            文字 / Blog
-        </a>
 
+<a href="#">
+文字 / Blog
+</a>
 
-        <a href="#">
-            瞬间 / Moments
-        </a>
 
+<a href="#">
+瞬间 / Moments
+</a>
 
-        <a href="#">
-            留言 / Messages
-        </a>
 
+<a href="#">
+留言 / Messages
+</a>
 
-        <a href="#">
-            关于我 / About Me
-        </a>
 
+<a href="#">
+关于我 / About Me
+</a>
 
-    </div>
 
+</div>
 
 
-    <div class="line"></div>
 
 
 
-    <div class="links">
+<div class="line"></div>
 
-        <a href="#">
-            GitHub
-        </a>
 
-    </div>
 
 
 
+<div class="links">
 
-    <!-- Footer -->
+<a href="#">
+GitHub
+</a>
 
+</div>
 
-    <div class="footer">
 
 
-        <div class="footer-section">
 
 
-            Copyright © 2026 - 2028 Liam. All Rights Reserved.
+<!-- Personal Philosophy -->
 
 
-            <br><br>
+<div class="footer-accent">
 
 
-            All original content published on this website is owned by Liam.
+Built with curiosity, technology and a passion for the digital world.
 
+<br>
 
-            <br><br>
+因好奇而探索，因技术而连接，与数字世界同行。
 
 
-            Third-party content, trademarks, and referenced materials remain the property of their respective owners and sources.
+</div>
 
 
-            <br><br>
 
 
-            Unauthorized downloading, commercial redistribution, reproduction, modification, or distortion of any content is prohibited without prior written permission.
 
 
-        </div>
+<!-- Copyright -->
 
 
+<div class="footer">
 
 
 
-        <div class="footer-section">
+<div class="footer-section">
 
 
-            © 2026 - 2028 Liam 版权所有。
+Copyright © 2026 - 2028 Liam. All Rights Reserved.
 
 
-            <br><br>
+<br>
 
 
-            本站原创内容版权归 Liam 所有。
+All original content published on this website is owned by Liam.
 
 
-            <br><br>
+<br>
 
 
-            本站引用、转载或展示的第三方内容、商标及相关资料，其版权归原作者及来源方所有。
+Third-party content, trademarks, and referenced materials remain the property of their respective owners and sources.
 
 
-            <br><br>
+<br>
 
 
-            未经书面授权，不得下载、商业转载、复制、修改、歪曲相关内容。
+Unauthorized downloading, commercial redistribution, reproduction, modification, or distortion of any content is prohibited without prior written permission.
 
 
-        </div>
+</div>
 
 
 
 
 
-        <div class="footer-accent">
+<div class="footer-section">
 
 
-            Built with curiosity, technology and a passion for the digital world.
+© 2026 - 2028 Liam 版权所有。
 
 
-            <br>
+<br>
 
 
-            因好奇而探索，因技术而连接，与数字世界同行。
+本站原创内容版权归 Liam 所有。
 
 
-        </div>
+<br>
 
 
+本站引用、转载或展示的第三方内容、商标及相关资料，其版权归原作者及来源方所有。
 
-    </div>
+
+<br>
+
+
+未经书面授权，不得下载、商业转载、复制、修改、歪曲相关内容。
+
+
+</div>
 
 
 
 </div>
+
+
+
+</div>
+
 
 
 </body>
