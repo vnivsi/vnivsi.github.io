@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Liam · vnivsi</title>
+
+
+<style>
+
+* {
+    box-sizing:border-box;
+}
+
+
+body {
+
+    margin:0;
+
+    background:#faf9f7;
+
+    color:#222;
+
+    font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    "SF Pro Text",
+    "PingFang SC",
+    "Noto Sans SC",
+    "Microsoft YaHei",
+    Arial,
+    sans-serif;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+
+.container {
+
+    width:100%;
+
+    max-width:900px;
+
+    text-align:center;
+
+    padding:45px 30px 60px;
+
+}
+
+
+
+
+
+/* Avatar */
+
+.avatar {
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin:0 auto 18px;
+
+    border:1px solid #eeeeee;
+
+}
+
+
+
+
+
+/* Liam */
+
+.name {
+
+    font-size:24px;
+
+    font-weight:600;
+
+    letter-spacing:0.8px;
+
+    color:rgb(255,106,0);
+
+    margin-bottom:18px;
+
+}
+
+
+
+
+
+/* Philosophy */
+
+.philosophy {
+
+    font-size:14px;
+
+    line-height:1.8;
+
+    color:#777;
+
+    margin-bottom:30px;
+
+}
+
+
+
+
+
+/* Navigation */
+
+.nav {
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:22px;
+
+    flex-wrap:nowrap;
+
+    white-space:nowrap;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.nav a {
+
+    color:#222;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+}
+
+
+
+.nav a:hover {
+
+    color:rgb(255,106,0);
+
+}
+
+
+
+/* Active Navigation */
+
+.nav a.active {
+
+    font-weight:600;
+
+    text-decoration:underline;
+
+    text-underline-offset:6px;
+
+}
+
+
+
+
+
+/* GitHub */
+
+.links {
+
+    margin-bottom:30px;
+
+}
+
+
+
+.links a {
+
+    color:#333;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+}
+
+
+
+.links a:hover {
+
+    color:rgb(255,106,0);
+
+}
+
+
+
+
+
+/* Keywords */
+
+.keywords {
+
+    margin-bottom:30px;
+
+}
+
+
+
+.keywords-box {
+
+    display:inline-block;
+
+    border-left:1px solid rgb(255,106,0);
+
+    border-right:1px solid rgb(255,106,0);
+
+    padding:6px 18px;
+
+    color:#777;
+
+    font-size:13px;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+/* Divider */
+
+.line {
+
+    width:50px;
+
+    height:1px;
+
+    background:#ddd;
+
+    margin:30px auto;
+
+}
+
+
+
+
+
+/* Copyright */
+
+.footer {
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+    color:#999;
+
+    font-size:11px;
+
+    line-height:1.5;
+
+}
+
+
+
+.footer-section {
+
+    margin-bottom:18px;
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+
+.container {
+
+    padding:40px 18px;
+
+}
+
+
+.nav {
+
+    flex-wrap:wrap;
+
+    white-space:normal;
+
+    gap:16px;
+
+}
+
+
+
+.footer {
+
+    font-size:11px;
+
+}
+
+
+}
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<div class="container">
+
+
+
+<img class="avatar" src="avatar.png" alt="Liam Avatar">
+
+
+
+<div class="name">
+
+Liam
+
+</div>
+
+
+
+
+
+<div class="philosophy">
+
+
+Built with curiosity, technology and a passion for the digital world.
+
+
+<br>
+
+
+因好奇而探索，因技术而连接，与数字世界同行。
+
+
+</div>
+
+
+
+
+
+
+
+<div class="nav">
+
+
+<a href="index.html" class="active">
+Home / 首页
+</a>
+
+
+<a href="blog.html">
+Blog / 文字
+</a>
+
+
+<a href="moments.html">
+Moments / 瞬间
+</a>
+
+
+<a href="messages.html">
+Messages / 留言
+</a>
+
+
+<a href="about.html">
+About Me / 关于我
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="links">
+
+<a href="#">
+GitHub
+</a>
+
+</div>
+
+
+
+
+
+
+
+<div class="keywords">
+
+
+<div class="keywords-box">
+
+
+探索 · 尝试 · 记录 · 棱镜 · 拾光 · 印记 · 回声
+
+
+<br>
+
+
+Explore · Try · Capture · Prism · Light · Imprint · Echo
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="line"></div>
+
+
+
+
+
+
+
+<div class="footer">
+
+
+
+<div class="footer-section">
+
+
+Copyright © 2026 - 2028 Liam. All Rights Reserved.
+
+
+<br>
+
+
+All original content published on this site is owned by Liam.
+
+
+<br>
+
+
+The copyright of all content published on this site is owned by this platform and/or the original authors/sources.
+
+
+<br>
+
+
+Unauthorized downloading, commercial redistribution (including reproduction), distortion, or modification is prohibited without prior written authorization.
+
+
+</div>
+
+
+
+
+
+<div class="footer-section">
+
+
+© 2026 - 2028 Liam 版权所有。
+
+
+<br>
+
+
+本站发布内容之版权归属本站及原作者/来源方。
+
+
+<br>
+
+
+未经书面授权，不得下载、商业性转载（含复制），亦不得歪曲或篡改相关内容。
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</body>
+
+</html>
