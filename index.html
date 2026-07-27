@@ -1,53 +1,63 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Liam | vnivsi</title>
-
+<title>Liam · vnivsi</title>
 
 <style>
 
-body {
-
-    font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Arial,
-    sans-serif;
-
-    max-width:700px;
-
-    margin:60px auto;
-
-    padding:0 20px;
-
-    line-height:1.8;
-
-    color:#222;
-
-    text-align:center;
-
+* {
+    box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    background: #faf9f7;
+    color: #222;
+    font-family:
+        "Inter",
+        "Noto Sans SC",
+        "Microsoft YaHei",
+        sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+
+.container {
+
+    width: 360px;
+    text-align: center;
+
+    padding: 45px 20px;
+
+}
 
 
 /* Avatar */
 
 .avatar {
 
-    width:180px;
+    width: 72px;
+    height: 72px;
 
-    height:180px;
+    border-radius: 50%;
 
-    object-fit:cover;
+    margin: 0 auto 18px;
 
-    border-radius:20px;
+    background: #eee;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:35px;
 
 }
 
@@ -57,85 +67,140 @@ body {
 
 .name {
 
-    margin-top:25px;
-
-    font-size:38px;
+    font-size: 24px;
 
     font-weight:600;
 
+    letter-spacing:0.8px;
+
+    margin-bottom:8px;
+
 }
 
 
-
-/* Digital identity */
+/* Identity */
 
 .identity {
 
-    margin-top:20px;
+    font-size:13px;
 
-    font-size:20px;
+    line-height:1.8;
 
-    line-height:1.7;
+    color:#777;
 
-    font-weight:400;
-
-}
-
-
-
-.identity-cn {
-
-    margin-top:8px;
+    margin-bottom:28px;
 
 }
 
+
+.identity strong {
+
+    font-size:15px;
+
+    color:#444;
+
+}
 
 
 /* Navigation */
 
-.navigation {
 
-    margin-top:45px;
+.nav {
 
-    padding-top:25px;
+    display:flex;
 
-    border-top:1px solid #ddd;
+    justify-content:center;
 
-    font-size:16px;
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:28px;
 
 }
 
 
-
-.navigation a {
-
-    display:inline-block;
-
-    margin:6px 8px;
-
-    color:#333;
+.nav a {
 
     text-decoration:none;
 
-}
+    color:#333;
 
-
-
-.navigation a:hover {
-
-    text-decoration:underline;
+    font-size:13px;
 
 }
 
 
+.nav a:hover {
 
-/* Hidden Mastodon verification */
+    color:#777;
 
-.verification {
+}
 
-    position:absolute;
 
-    left:-9999px;
+
+/* Divider */
+
+.line {
+
+    width:40px;
+
+    height:1px;
+
+    background:#ddd;
+
+    margin:25px auto;
+
+}
+
+
+
+/* Links */
+
+
+.links a {
+
+    display:block;
+
+    margin:12px 0;
+
+    text-decoration:none;
+
+    color:#333;
+
+    font-size:13px;
+
+}
+
+
+.links a:hover {
+
+    color:#777;
+
+}
+
+
+
+/* Footer */
+
+
+.footer {
+
+    margin-top:42px;
+
+    font-size:11px;
+
+    color:#999;
+
+    line-height:1.8;
+
+}
+
+
+
+.footer .en {
+
+    margin-bottom:10px;
 
 }
 
@@ -147,110 +212,162 @@ body {
 </head>
 
 
-
 <body>
 
 
-
-<img 
-class="avatar"
-src="avatar.png"
-alt="Liam avatar">
+<div class="container">
 
 
+    <!-- Avatar -->
 
-<div class="name">
+    <div class="avatar">
+        🐱
+    </div>
 
-Liam
+
+    <!-- Name -->
+
+    <div class="name">
+        Liam
+    </div>
+
+
+
+    <!-- Digital Identity -->
+
+
+    <div class="identity">
+
+        <strong>vnivsi</strong>
+
+        <br>
+
+        Liam's personal digital identity
+
+        <br>
+
+        in an ever-evolving cyber world.
+
+        <br><br>
+
+        Liam 的个人数字身份，
+
+        <br>
+
+        于不断演进的赛博世界中探索。
+
+    </div>
+
+
+
+
+    <!-- Navigation -->
+
+
+    <div class="nav">
+
+        <a href="#">首页 / Home</a>
+
+        <a href="#">文字 / Blog</a>
+
+        <a href="#">瞬间 / Moments</a>
+
+        <a href="#">留言 / Messages</a>
+
+        <a href="#">关于我 / About Me</a>
+
+
+    </div>
+
+
+
+
+    <div class="line"></div>
+
+
+
+    <!-- External Links -->
+
+
+    <div class="links">
+
+
+        <a href="#">
+            GitHub
+        </a>
+
+
+    </div>
+
+
+
+    <!-- Footer -->
+
+
+    <div class="footer">
+
+
+        <div class="en">
+
+        Copyright © 2026 - 2028 Liam. All Rights Reserved.
+
+        <br>
+
+        All original content published on this website is owned by Liam.
+        
+        <br>
+
+        Third-party content, trademarks, and referenced materials remain the property of their respective owners and sources.
+
+        <br>
+
+        Unauthorized downloading, commercial redistribution, reproduction, modification, or distortion of any content is prohibited without prior written permission.
+
+        </div>
+
+
+
+
+        <div class="cn">
+
+        © 2026 - 2028 Liam 版权所有
+
+        <br>
+
+        本站原创内容版权归 Liam 所有。
+
+        <br>
+
+        本站引用、转载或展示的第三方内容、商标及相关资料，
+
+        <br>
+
+        其版权归原作者及来源方所有。
+
+        <br>
+
+        未经书面授权，不得下载、商业转载、复制、修改、歪曲相关内容。
+
+        </div>
+
+
+
+        <br>
+
+        Built with curiosity, technology and a passion for the digital world.
+
+        <br>
+
+        因好奇而探索，因技术而连接，与数字世界同行。
+
+
+    </div>
+
 
 </div>
-
-
-
-<div class="identity">
-
-
-<div>
-
-vnivsi · Liam's personal digital identity in an ever-evolving cyber world.
-
-</div>
-
-
-<div class="identity-cn">
-
-vnivsi · Liam 在不断演进的赛博世界中的个人数字身份。
-
-</div>
-
-
-</div>
-
-
-
-
-
-<div class="navigation">
-
-
-<a href="#">
-首页 / Home
-</a>
-
-
-<a href="#">
-文字 / Blog
-</a>
-
-
-<a href="#">
-瞬间 / Moments
-</a>
-
-
-<a href="#">
-留言 / Messages
-</a>
-
-
-<a href="#">
-关于我 / About Me
-</a>
-
-
-<a href="https://github.com/vnivsi">
-GitHub
-</a>
-
-
-</div>
-
-
-
-
-
-<!-- Mastodon verification links -->
-
-
-<a 
-class="verification"
-rel="me"
-href="https://social.vivaldi.net/@vnivsi">
-Vivaldi Social
-</a>
-
-
-
-<a 
-class="verification"
-rel="me"
-href="https://mastodon.social/@vnivsi">
-Mastodon
-</a>
 
 
 
 </body>
-
 
 </html>
