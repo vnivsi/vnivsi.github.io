@@ -342,18 +342,19 @@ body {
 
     background:none;
 
+    color:#555;
+
     font-size:14px;
 
     font-weight:600;
-
-    color:#555;
 
     text-decoration:underline;
 
     cursor:pointer;
 
-}
+    font-family:inherit;
 
+}
 
 
 .send-button:hover {
@@ -368,9 +369,25 @@ body {
 /* External Links */
 
 
-.external-links a {
+.external-links {
 
-    display:block;
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    max-width:700px;
+
+    margin:0 auto;
+
+    gap:18px 35px;
+
+}
+
+
+
+.external-links a {
 
     color:#555;
 
@@ -379,8 +396,6 @@ body {
     font-weight:600;
 
     text-decoration:underline;
-
-    margin:14px 0;
 
 }
 
@@ -577,16 +592,6 @@ About Me / 关于我
 
 
 
-<div class="section-title">
-
-Leave a Message / 留言
-
-</div>
-
-
-
-
-
 <div class="language-block">
 
 
@@ -723,23 +728,6 @@ Send / 发送
 <div class="external-links">
 
 
-
-<a href="#" target="_blank">
-
-IMDb
-
-</a>
-
-
-
-<a href="connect-instagram.html">
-
-Instagram
-
-</a>
-
-
-
 <a href="connect-wechat.html">
 
 WeChat / 微信
@@ -764,6 +752,15 @@ Video Channel / 微信视频号
 
 
 
+
+<a href="connect-whatsapp.html">
+
+WhatsApp
+
+</a>
+
+
+
 <a href="connect-discord.html">
 
 Discord
@@ -772,12 +769,19 @@ Discord
 
 
 
-<a href="connect-whatsapp.html">
+<a href="connect-instagram.html">
 
-WhatsApp
+Instagram
 
 </a>
 
+
+
+<a href="#" target="_blank">
+
+IMDb
+
+</a>
 
 
 </div>
