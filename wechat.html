@@ -22,7 +22,6 @@ html {
 }
 
 
-
 body {
 
     margin:0;
@@ -52,8 +51,6 @@ body {
 
 
 
-
-
 .container {
 
     width:100%;
@@ -68,10 +65,7 @@ body {
 
 
 
-
-
 /* Avatar */
-
 
 .avatar {
 
@@ -93,10 +87,7 @@ body {
 
 
 
-
-
 /* Liam */
-
 
 .name {
 
@@ -114,10 +105,23 @@ body {
 
 
 
+/* Philosophy */
+
+.identity {
+
+    font-size:14px;
+
+    line-height:1.8;
+
+    color:#777;
+
+    margin-bottom:30px;
+
+}
+
 
 
 /* Navigation */
-
 
 .nav {
 
@@ -157,6 +161,34 @@ body {
 
 
 
+.nav a::after {
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    bottom:0;
+
+    height:1px;
+
+    background:transparent;
+
+}
+
+
+
+.nav a.active::after {
+
+    background:#222;
+
+}
+
+
+
 .nav a:hover {
 
     color:rgb(255,106,0);
@@ -169,10 +201,9 @@ body {
 
 /* QR Content */
 
+.about-content {
 
-.qr-content {
-
-    max-width:500px;
+    max-width:680px;
 
     margin:0 auto;
 
@@ -188,56 +219,41 @@ body {
 
 
 
-.qr-title {
+.language-block {
 
-    font-size:14px;
+    margin-bottom:45px;
+
+}
+
+
+
+.language-block p {
+
+    margin:8px 0;
+
+}
+
+
+
+.section-title {
+
+    margin-top:35px;
+
+    margin-bottom:20px;
 
     font-weight:600;
 
     color:#555;
 
-    margin-bottom:22px;
-
 }
 
 
 
 
 
-.qr-image {
+/* Back Link */
 
-    width:180px;
-
-    height:180px;
-
-    object-fit:contain;
-
-    margin:0 auto 22px;
-
-}
-
-
-
-
-
-.qr-note {
-
-    font-size:12px;
-
-    line-height:1.8;
-
-    color:#777;
-
-}
-
-
-
-
-
-/* Back */
-
-
-.back {
+.back-link {
 
     margin-top:35px;
 
@@ -245,21 +261,21 @@ body {
 
 
 
-.back a {
+.back-link a {
 
     color:#555;
+
+    text-decoration:underline;
 
     font-size:13px;
 
     font-weight:600;
 
-    text-decoration:underline;
-
 }
 
 
 
-.back a:hover {
+.back-link a:hover {
 
     color:rgb(255,106,0);
 
@@ -269,12 +285,33 @@ body {
 
 
 
-/* Footer */
+/* Divider */
 
+.line {
+
+    width:50px;
+
+    height:1px;
+
+    background:#ddd;
+
+    margin:40px auto;
+
+}
+
+
+
+/* Footer */
 
 .footer {
 
-    margin-top:55px;
+    max-width:900px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+    text-align:center;
 
     color:#999;
 
@@ -286,12 +323,53 @@ body {
 
 
 
+.footer-section {
+
+    margin-bottom:18px;
+
+}
 
 
-/* Mobile */
+
+/* Built With */
+
+.built-with {
+
+    margin-top:28px;
+
+    font-size:12px;
+
+    line-height:1.8;
+
+    color:#888;
+
+}
 
 
-@media(max-width:600px){
+
+.built-with a {
+
+    color:#888;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+
+
+.built-with a:hover {
+
+    color:rgb(255,106,0);
+
+}
+
+
+
+/* Mobile Responsive */
+
+@media (max-width:600px){
 
 
 .container {
@@ -320,6 +398,14 @@ body {
 
 
 
+.identity {
+
+    font-size:13px;
+
+}
+
+
+
 .nav {
 
     flex-wrap:wrap;
@@ -328,6 +414,8 @@ body {
 
     gap:15px;
 
+    margin-bottom:30px;
+
 }
 
 
@@ -335,16 +423,6 @@ body {
 .nav a {
 
     font-size:13px;
-
-}
-
-
-
-.qr-image {
-
-    width:170px;
-
-    height:170px;
 
 }
 
@@ -359,24 +437,22 @@ body {
 
 }
 
-
 </style>
 
-
 </head>
-
-
-
 <body>
 
 
 <div class="container">
 
 
+<!-- Avatar -->
 
 <img class="avatar" src="avatar.png" alt="Liam Avatar">
 
 
+
+<!-- Name -->
 
 <div class="name">
 
@@ -387,6 +463,27 @@ Liam
 
 
 
+
+<!-- Identity -->
+
+<div class="identity">
+
+
+Built with curiosity, technology and a passion for the digital world.
+
+<br>
+
+因好奇而探索，因技术而连接，与数字世界同行。
+
+
+</div>
+
+
+
+
+
+
+<!-- Navigation -->
 
 <div class="nav">
 
@@ -399,7 +496,23 @@ Home / 首页
 
 
 
-<a href="connections.html">
+<a href="blog.html">
+
+Blog / 文字
+
+</a>
+
+
+
+<a href="moments.html">
+
+Moments / 瞬间
+
+</a>
+
+
+
+<a href="connections.html" class="active">
 
 Connections / 连接
 
@@ -424,13 +537,16 @@ About Me / 关于我
 
 
 
-<div class="qr-content">
+<!-- QR Content -->
+
+
+<div class="about-content">
 
 
 
 
 
-<div class="qr-title">
+<div class="section-title">
 
 WeChat / 微信
 
@@ -441,23 +557,40 @@ WeChat / 微信
 
 
 
-<img class="qr-image" src="assets/qrcode/wechat.png" alt="WeChat QR Code">
+
+<div class="language-block">
+
+
+
+<img 
+src="assets/qrcode/wechat.png"
+alt="WeChat QR Code"
+style="
+width:180px;
+height:180px;
+object-fit:contain;
+margin:10px auto 25px;
+display:block;
+">
 
 
 
 
 
-
-<div class="qr-note">
-
+<p>
 
 Scan with WeChat or save and recognize in WeChat.
 
+</p>
 
-<br>
 
+
+<p>
 
 微信扫描，或保存后在微信内识别。
+
+</p>
+
 
 
 </div>
@@ -467,8 +600,7 @@ Scan with WeChat or save and recognize in WeChat.
 
 
 
-
-<div class="back">
+<div class="back-link">
 
 
 <a href="connections.html">
@@ -484,27 +616,116 @@ Scan with WeChat or save and recognize in WeChat.
 
 
 
-
-
 </div>
 
 
 
 
 
+
+<!-- Divider -->
+
+<div class="line"></div>
+
+
+
+
+
+
+
+<!-- Footer -->
 
 
 <div class="footer">
 
 
-Copyright © 2026 - 2028 Liam.
+
+<div class="footer-section">
+
+
+Copyright © 2026 - 2028 Liam. All Rights Reserved.
 
 <br>
 
-All Rights Reserved.
+All original content published on this site is owned by Liam.
+
+<br>
+
+The copyright of all content published on this site is owned by this platform and/or the original authors/sources.
+
+<br>
+
+Unauthorized downloading, commercial redistribution (including reproduction), distortion, or modification is prohibited without prior written authorization.
 
 
 </div>
+
+
+
+
+
+
+<div class="footer-section">
+
+
+© 2026 - 2028 Liam 版权所有。
+
+<br>
+
+本站发布内容之版权归属本站及原作者/来源方。
+
+<br>
+
+未经书面授权，不得下载、商业性转载（含复制），亦不得歪曲或篡改相关内容。
+
+
+</div>
+
+
+
+
+
+
+
+<div class="built-with">
+
+
+This website is built with 
+
+<a href="https://pages.github.com/" target="_blank">
+
+GitHub Pages
+
+</a>
+
+and created with assistance from ChatGPT
+
+
+
+<br>
+
+
+
+本站基于 
+
+<a href="https://pages.github.com/" target="_blank">
+
+GitHub Pages
+
+</a>
+
+搭建，并由 ChatGPT 协助完成。
+
+
+</div>
+
+
+
+
+
+</div>
+
+
 
 
 
