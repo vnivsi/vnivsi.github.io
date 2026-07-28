@@ -7,7 +7,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Liam · vnivsi</title>
+<title>About Me · Liam</title>
 
 
 <style>
@@ -30,7 +30,7 @@ body {
     BlinkMacSystemFont,
     "SF Pro Display",
     "SF Pro Text",
-    "PingFang SC",
+    "Helvetica Neue",
     "Noto Sans SC",
     "Microsoft YaHei",
     Arial,
@@ -45,7 +45,6 @@ body {
 }
 
 
-
 .container {
 
     width:100%;
@@ -57,8 +56,6 @@ body {
     padding:45px 30px 60px;
 
 }
-
-
 
 
 
@@ -84,8 +81,6 @@ body {
 
 
 
-
-
 /* Liam */
 
 .name {
@@ -98,17 +93,15 @@ body {
 
     color:rgb(255,106,0);
 
-    margin-bottom:18px;
+    margin-bottom:30px;
 
 }
 
 
 
-
-
 /* Philosophy */
 
-.philosophy {
+.identity {
 
     font-size:14px;
 
@@ -116,11 +109,9 @@ body {
 
     color:#777;
 
-    margin-bottom:30px;
+    margin-bottom:32px;
 
 }
-
-
 
 
 
@@ -134,16 +125,13 @@ body {
 
     align-items:center;
 
-    gap:22px;
+    gap:28px;
 
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
 
-    white-space:nowrap;
-
-    margin-bottom:30px;
+    margin-bottom:40px;
 
 }
-
 
 
 .nav a {
@@ -157,7 +145,6 @@ body {
 }
 
 
-
 .nav a:hover {
 
     color:rgb(255,106,0);
@@ -165,10 +152,7 @@ body {
 }
 
 
-
-/* Active Navigation */
-
-.nav a.active {
+.nav .active {
 
     font-weight:600;
 
@@ -180,69 +164,65 @@ body {
 
 
 
+/* About */
 
+.about-content {
 
-/* GitHub */
+    max-width:680px;
 
-.links {
-
-    margin-bottom:30px;
-
-}
-
-
-
-.links a {
-
-    color:#333;
-
-    text-decoration:none;
-
-    font-size:14px;
-
-}
-
-
-
-.links a:hover {
-
-    color:rgb(255,106,0);
-
-}
-
-
-
-
-
-/* Keywords */
-
-.keywords {
-
-    margin-bottom:30px;
-
-}
-
-
-
-.keywords-box {
-
-    display:inline-block;
-
-    border-left:1px solid rgb(255,106,0);
-
-    border-right:1px solid rgb(255,106,0);
-
-    padding:6px 18px;
+    margin:0 auto;
 
     color:#777;
 
-    font-size:13px;
+    font-size:14px;
 
     line-height:1.8;
 
 }
 
 
+
+.about-title {
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#555;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.language-block {
+
+    margin-bottom:45px;
+
+}
+
+
+
+.language-block p {
+
+    margin:8px 0;
+
+}
+
+
+
+.section-title {
+
+    margin-top:35px;
+
+    margin-bottom:20px;
+
+    font-weight:600;
+
+    color:#555;
+
+}
 
 
 
@@ -256,21 +236,19 @@ body {
 
     background:#ddd;
 
-    margin:30px auto;
+    margin:40px auto;
 
 }
 
 
 
-
-
-/* Copyright */
+/* Footer */
 
 .footer {
 
     max-width:900px;
 
-    margin:0 auto;
+    margin:auto;
 
     text-align:center;
 
@@ -292,41 +270,8 @@ body {
 
 
 
-
-
-@media(max-width:600px){
-
-
-.container {
-
-    padding:40px 18px;
-
-}
-
-
-.nav {
-
-    flex-wrap:wrap;
-
-    white-space:normal;
-
-    gap:16px;
-
-}
-
-
-
-.footer {
-
-    font-size:11px;
-
-}
-
-
-}
-
-
 </style>
+
 
 </head>
 
@@ -338,9 +283,7 @@ body {
 <div class="container">
 
 
-
 <img class="avatar" src="avatar.png" alt="Liam Avatar">
-
 
 
 <div class="name">
@@ -351,24 +294,15 @@ Liam
 
 
 
-
-
-<div class="philosophy">
-
+<div class="identity">
 
 Built with curiosity, technology and a passion for the digital world.
 
-
 <br>
-
 
 因好奇而探索，因技术而连接，与数字世界同行。
 
-
 </div>
-
-
-
 
 
 
@@ -376,54 +310,60 @@ Built with curiosity, technology and a passion for the digital world.
 <div class="nav">
 
 
-<a href="index.html" >
+<a href="index.html">
+
 Home / 首页
+
 </a>
 
 
 <a href="blog.html">
+
 Blog / 文字
+
 </a>
 
 
 <a href="moments.html">
+
 Moments / 瞬间
+
 </a>
 
 
 <a href="messages.html">
+
 Messages / 留言
+
 </a>
 
 
 <a href="about.html" class="active">
+
 About Me / 关于我
+
 </a>
 
 
 </div>
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
 
 
 
 
 <div class="about-content">
 
-<h3>
+
+
+<div class="about-title">
+
 About Me / 关于我
-</h3>
+
+</div>
+
+
+
+
+<div class="language-block">
 
 
 <p>
@@ -432,15 +372,124 @@ Hello, I'm Liam.
 
 
 <p>
-你好，我是 Liam。
+I am a filmmaker, director, musician, and explorer of the digital world.
+</p>
+
+
+<p>
+My journey began with storytelling and visual creation, and gradually expanded into music, technology, and the endless possibilities of the Internet.
+</p>
+
+
+<p>
+Through years of exploration and creation, I have participated in different forms of artistic expression and established my presence across multiple platforms and professional communities both locally and internationally.
+</p>
+
+
+<p>
+This personal digital space is where I record thoughts, preserve moments, and explore the connection between creativity, technology, and people.
 </p>
 
 
 </div>
+
+
+
+
+
+
+<div class="language-block">
+
+
+<p>
+你好，我是 Liam。
+</p>
+
+
+<p>
+我是一名导演，也是一名音乐人和数字世界探索者。
+</p>
+
+
+<p>
+我的旅程始于故事与影像创作，并逐渐延伸至音乐、技术，以及充满可能性的互联网世界。
+</p>
+
+
+<p>
+在不断探索与创作的过程中，我尝试通过不同形式表达想法，并在国内外多个平台及专业领域留下自己的数字足迹。
+</p>
+
+
+<p>
+这里是我的个人数字空间，用于记录思考、收藏瞬间，并探索创造力、技术与人与世界之间的连接。
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="section-title">
+
+Digital Identity / 数字身份
+
+</div>
+
+
+
+<div class="language-block">
+
+
+<p>
+vnivsi is a personal mark representing my presence in the digital world.
+</p>
+
+
+<p>
+vnivsi 是我在数字世界中的个人印记。
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="section-title">
+
+Creative Journey / 创作旅程
+
+</div>
+
+
+<div class="language-block">
+
+
+<p>
+From filmmaking and music creation to technology and artificial intelligence, I have always been fascinated by how human creativity connects with the digital world.
+</p>
+
+
+<p>
+从电影创作、音乐表达，到技术与人工智能，我始终关注人类创造力如何与数字世界产生连接。
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
 <div class="line"></div>
-
-
-
 
 
 
@@ -448,27 +497,20 @@ Hello, I'm Liam.
 <div class="footer">
 
 
-
 <div class="footer-section">
 
 
 Copyright © 2026 - 2028 Liam. All Rights Reserved.
 
-
 <br>
-
 
 All original content published on this site is owned by Liam.
 
-
 <br>
-
 
 The copyright of all content published on this site is owned by this platform and/or the original authors/sources.
 
-
 <br>
-
 
 Unauthorized downloading, commercial redistribution (including reproduction), distortion, or modification is prohibited without prior written authorization.
 
@@ -478,21 +520,16 @@ Unauthorized downloading, commercial redistribution (including reproduction), di
 
 
 
-
 <div class="footer-section">
 
 
 © 2026 - 2028 Liam 版权所有。
 
-
 <br>
-
 
 本站发布内容之版权归属本站及原作者/来源方。
 
-
 <br>
-
 
 未经书面授权，不得下载、商业性转载（含复制），亦不得歪曲或篡改相关内容。
 
@@ -505,9 +542,8 @@ Unauthorized downloading, commercial redistribution (including reproduction), di
 
 
 
-
-
 </div>
+
 
 
 </body>
