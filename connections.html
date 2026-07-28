@@ -1,40 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Connections · Liam</title>
+
+
 <style>
 
+
 * {
-    box-sizing:border-box;
+
+box-sizing:border-box;
+
 }
 
 
+
 html {
-    overflow-y:scroll;
+
+overflow-y:scroll;
+
 }
 
 
 
 body {
 
-    margin:0;
 
-    background:#faf9f7;
+margin:0;
 
-    color:#222;
 
-    font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Display",
-    "SF Pro Text",
-    "PingFang SC",
-    "Noto Sans SC",
-    "Microsoft YaHei",
-    Arial,
-    sans-serif;
+background:#faf9f7;
 
-    min-height:100vh;
 
-    display:flex;
+color:#222;
 
-    justify-content:center;
+
+font-family:
+
+-apple-system,
+
+BlinkMacSystemFont,
+
+"SF Pro Display",
+
+"SF Pro Text",
+
+"PingFang SC",
+
+"Noto Sans SC",
+
+"Microsoft YaHei",
+
+Arial,
+
+sans-serif;
+
+
+min-height:100vh;
+
+
+display:flex;
+
+
+justify-content:center;
+
 
 }
 
@@ -43,56 +79,77 @@ body {
 
 .container {
 
-    width:100%;
 
-    max-width:900px;
+width:100%;
 
-    text-align:center;
 
-    padding:45px 30px 60px;
+max-width:900px;
+
+
+text-align:center;
+
+
+padding:45px 30px 60px;
+
 
 }
+
 
 
 
 
 /* Avatar */
 
+
 .avatar {
 
-    width:80px;
 
-    height:80px;
+width:80px;
 
-    border-radius:50%;
 
-    object-fit:cover;
+height:80px;
 
-    display:block;
 
-    margin:0 auto 18px;
+border-radius:50%;
 
-    border:1px solid #eeeeee;
+
+object-fit:cover;
+
+
+display:block;
+
+
+margin:0 auto 18px;
+
+
+border:1px solid #eeeeee;
+
 
 }
 
 
 
 
+/* Name */
 
-/* Liam */
 
 .name {
 
-    font-size:24px;
 
-    font-weight:600;
+font-size:24px;
 
-    letter-spacing:0.8px;
 
-    color:rgb(255,106,0);
+font-weight:600;
 
-    margin-bottom:18px;
+
+letter-spacing:0.8px;
+
+
+color:rgb(255,106,0);
+
+
+margin-bottom:18px;
+
 
 }
 
@@ -102,17 +159,25 @@ body {
 
 /* Identity */
 
+
 .identity {
 
-    font-size:14px;
 
-    line-height:1.8;
+font-size:14px;
 
-    color:#777;
 
-    margin-bottom:30px;
+line-height:1.8;
+
+
+color:#777;
+
+
+margin-bottom:30px;
+
 
 }
+
+
 
 
 
@@ -120,75 +185,108 @@ body {
 
 /* Navigation */
 
+
 .nav {
 
-    display:flex;
 
-    justify-content:center;
+display:flex;
 
-    align-items:center;
 
-    gap:22px;
+justify-content:center;
 
-    flex-wrap:nowrap;
 
-    white-space:nowrap;
+align-items:center;
 
-    margin-bottom:30px;
+
+gap:22px;
+
+
+flex-wrap:nowrap;
+
+
+white-space:nowrap;
+
+
+margin-bottom:30px;
+
 
 }
+
+
 
 
 
 .nav a {
 
-    color:#222;
 
-    text-decoration:none;
+color:#222;
 
-    font-size:14px;
 
-    font-weight:600;
+text-decoration:none;
 
-    position:relative;
 
-    padding-bottom:6px;
+font-size:14px;
+
+
+font-weight:600;
+
+
+position:relative;
+
+
+padding-bottom:6px;
+
 
 }
+
 
 
 
 .nav a::after {
 
-    content:"";
 
-    position:absolute;
+content:"";
 
-    left:0;
 
-    right:0;
+position:absolute;
 
-    bottom:0;
 
-    height:1px;
+left:0;
 
-    background:transparent;
+
+right:0;
+
+
+bottom:0;
+
+
+height:1px;
+
+
+background:transparent;
+
 
 }
+
 
 
 
 .nav a.active::after {
 
-    background:#222;
+
+background:#222;
+
 
 }
+
 
 
 
 .nav a:hover {
 
-    color:rgb(255,106,0);
+
+color:rgb(255,106,0);
+
 
 }
 
@@ -196,38 +294,31 @@ body {
 
 
 
-/* Connections */
+
+
+/* Connections Content */
+
 
 .connections-content {
 
-    max-width:680px;
 
-    margin:0 auto;
+max-width:680px;
 
-    color:#777;
 
-    font-size:14px;
+margin:0 auto;
 
-    line-height:1.8;
+
+color:#777;
+
+
+font-size:14px;
+
+
+line-height:1.8;
+
 
 }
 
-
-
-
-.language-block {
-
-    margin-bottom:35px;
-
-}
-
-
-
-.language-block p {
-
-    margin:8px 0;
-
-}
 
 
 
@@ -236,79 +327,81 @@ body {
 
 /* Form */
 
+
 .form-box {
 
-    max-width:420px;
 
-    margin:0 auto;
+max-width:520px;
+
+
+margin:0 auto;
+
+
+text-align:left;
+
 
 }
 
 
 
-.form-group {
+.form-box label {
 
-    margin-bottom:14px;
 
-    text-align:left;
+display:block;
+
+
+font-size:14px;
+
+
+color:#777;
+
+
+margin-bottom:8px;
+
 
 }
 
 
 
-.form-group label {
+.form-box input,
 
-    display:block;
 
-    margin-bottom:5px;
+.form-box textarea {
 
-    color:#777;
 
-    font-size:14px;
+width:100%;
+
+
+border:1px solid #ddd;
+
+
+background:#fff;
+
+
+padding:12px;
+
+
+font-size:14px;
+
+
+font-family:inherit;
+
+
+margin-bottom:20px;
+
 
 }
 
 
 
-.form-group input,
-
-.form-group textarea {
-
-    width:100%;
-
-    border:1px solid #ddd;
-
-    background:#fff;
-
-    padding:10px 12px;
-
-    font-size:14px;
-
-    font-family:inherit;
-
-    color:#333;
-
-}
+.form-box textarea {
 
 
-
-.form-group textarea {
-
-    height:120px;
-
-    resize:none;
-
-}
+height:150px;
 
 
+resize:none;
 
-.form-group input:focus,
-
-.form-group textarea:focus {
-
-    outline:none;
-
-    border-color:rgb(255,106,0);
 
 }
 
@@ -316,37 +409,49 @@ body {
 
 
 
-/* Send */
+.form-box button {
 
-.send-button {
 
-    margin-top:4px;
+display:block;
 
-    border:none;
 
-    background:none;
+margin:20px auto 0;
 
-    color:#777;
 
-    font-size:13px;
+background:none;
 
-    font-weight:500;
 
-    text-decoration:underline;
+border:none;
 
-    cursor:pointer;
 
-    font-family:inherit;
+font-size:14px;
+
+
+font-weight:600;
+
+
+color:#555;
+
+
+text-decoration:underline;
+
+
+cursor:pointer;
+
 
 }
 
 
 
-.send-button:hover {
 
-    color:rgb(255,106,0);
+.form-box button:hover {
+
+
+color:rgb(255,106,0);
+
 
 }
+
 
 
 
@@ -354,41 +459,58 @@ body {
 
 /* External Links */
 
+
 .external-links {
 
-    max-width:700px;
 
-    margin:0 auto;
+margin-top:45px;
+
 
 }
+
 
 
 
 .link-row {
 
-    display:flex;
 
-    justify-content:center;
+display:flex;
 
-    align-items:center;
 
-    gap:40px;
+justify-content:center;
 
-    margin:18px 0;
+
+align-items:center;
+
+
+gap:40px;
+
+
+margin:18px 0;
+
+
+flex-wrap:nowrap;
+
 
 }
 
 
 
+
 .external-links a {
 
-    color:#555;
 
-    font-size:14px;
+color:#555;
 
-    font-weight:600;
 
-    text-decoration:underline;
+font-size:14px;
+
+
+font-weight:600;
+
+
+text-decoration:underline;
+
 
 }
 
@@ -396,9 +518,12 @@ body {
 
 .external-links a:hover {
 
-    color:rgb(255,106,0);
+
+color:rgb(255,106,0);
+
 
 }
+
 
 
 
@@ -406,17 +531,25 @@ body {
 
 /* Divider */
 
+
 .line {
 
-    width:50px;
 
-    height:1px;
+width:50px;
 
-    background:#ddd;
 
-    margin:40px auto;
+height:1px;
+
+
+background:#ddd;
+
+
+margin:40px auto;
+
 
 }
+
+
 
 
 
@@ -424,21 +557,27 @@ body {
 
 /* Footer */
 
+
 .footer {
 
-    max-width:900px;
 
-    margin-left:auto;
+max-width:900px;
 
-    margin-right:auto;
 
-    text-align:center;
+margin:auto;
 
-    color:#999;
 
-    font-size:11px;
+text-align:center;
 
-    line-height:1.5;
+
+color:#999;
+
+
+font-size:11px;
+
+
+line-height:1.5;
+
 
 }
 
@@ -446,7 +585,9 @@ body {
 
 .footer-section {
 
-    margin-bottom:18px;
+
+margin-bottom:18px;
+
 
 }
 
@@ -454,47 +595,68 @@ body {
 
 
 
-/* Built With */
 
 .built-with {
 
-    margin-top:28px;
 
-    font-size:12px;
+margin-top:28px;
 
-    line-height:1.8;
 
-    color:#888;
+font-size:12px;
+
+
+line-height:1.8;
+
+
+color:#888;
+
 
 }
+
 
 
 
 .built-with a {
 
-    color:#888;
 
-    text-decoration:none;
+color:#888;
 
-    font-weight:600;
+
+text-decoration:none;
+
+
+font-weight:600;
+
 
 }
+
 
 
 
 .built-with a:hover {
 
-    color:rgb(255,106,0);
+
+color:rgb(255,106,0);
+
 
 }
-/* Mobile Responsive */
 
-@media (max-width:600px){
+
+
+
+
+/* Mobile */
+
+
+@media(max-width:600px){
+
 
 
 .container {
 
-    padding:35px 20px 50px;
+
+padding:35px 20px 50px;
+
 
 }
 
@@ -502,9 +664,12 @@ body {
 
 .avatar {
 
-    width:70px;
 
-    height:70px;
+width:70px;
+
+
+height:70px;
+
 
 }
 
@@ -512,7 +677,9 @@ body {
 
 .name {
 
-    font-size:22px;
+
+font-size:22px;
+
 
 }
 
@@ -520,7 +687,9 @@ body {
 
 .identity {
 
-    font-size:13px;
+
+font-size:13px;
+
 
 }
 
@@ -528,13 +697,18 @@ body {
 
 .nav {
 
-    flex-wrap:wrap;
 
-    white-space:normal;
+flex-wrap:wrap;
 
-    gap:15px;
 
-    margin-bottom:30px;
+white-space:normal;
+
+
+gap:15px;
+
+
+margin-bottom:30px;
+
 
 }
 
@@ -542,7 +716,9 @@ body {
 
 .nav a {
 
-    font-size:13px;
+
+font-size:13px;
+
 
 }
 
@@ -550,9 +726,9 @@ body {
 
 .connections-content {
 
-    max-width:100%;
 
-    font-size:14px;
+max-width:100%;
+
 
 }
 
@@ -560,15 +736,9 @@ body {
 
 .form-box {
 
-    max-width:100%;
 
-}
+max-width:100%;
 
-
-
-.external-links {
-
-    max-width:100%;
 
 }
 
@@ -576,9 +746,22 @@ body {
 
 .link-row {
 
-    flex-wrap:wrap;
 
-    gap:15px 25px;
+flex-wrap:wrap;
+
+
+gap:15px 25px;
+
+
+}
+
+
+
+.external-links {
+
+
+max-width:100%;
+
 
 }
 
@@ -586,26 +769,43 @@ body {
 
 .footer {
 
-    padding:0 10px;
+
+padding:0 10px;
+
 
 }
 
 
+
 }
+
 
 </style>
+
+
 </head>
-
-
 <body>
+
 
 
 <div class="container">
 
 
 
+
+
+
+<!-- Avatar -->
+
+
 <img class="avatar" src="avatar.png" alt="Liam Avatar">
 
+
+
+
+
+
+<!-- Name -->
 
 
 <div class="name">
@@ -617,13 +817,20 @@ Liam
 
 
 
+
+
+<!-- Identity -->
+
+
 <div class="identity">
+
 
 Built with curiosity, technology and a passion for the digital world.
 
 <br>
 
 因好奇而探索，因技术而连接，与数字世界同行。
+
 
 </div>
 
@@ -632,7 +839,13 @@ Built with curiosity, technology and a passion for the digital world.
 
 
 
+
+
+<!-- Navigation -->
+
+
 <div class="nav">
+
 
 
 <a href="index.html">
@@ -685,10 +898,18 @@ About Me / 关于我
 
 
 
+<!-- Connections Content -->
+
+
 <div class="connections-content">
 
 
 
+
+
+
+
+<!-- Message Intro -->
 
 
 <div class="language-block">
@@ -718,6 +939,10 @@ Leave a message, share your thoughts, or simply say hello.
 
 
 
+
+<!-- Formspree Form -->
+
+
 <div class="form-box">
 
 
@@ -727,7 +952,6 @@ Leave a message, share your thoughts, or simply say hello.
 
 
 
-<div class="form-group">
 
 
 <label>
@@ -737,18 +961,15 @@ Name / 名字（或昵称）
 </label>
 
 
-<input type="text" name="name" required>
-
-
-</div>
-
-
+<input 
+type="text"
+name="name"
+>
 
 
 
 
 
-<div class="form-group">
 
 
 <label>
@@ -758,19 +979,15 @@ Email / 邮箱
 </label>
 
 
-<input type="email" name="email">
-
-
-</div>
-
-
-
+<input
+type="email"
+name="email"
+>
 
 
 
 
 
-<div class="form-group">
 
 
 <label>
@@ -780,18 +997,18 @@ Message / 留言内容
 </label>
 
 
-<textarea name="message" required></textarea>
-
-
-</div>
-
-
+<textarea
+name="message">
+</textarea>
 
 
 
 
 
-<button type="submit" class="send-button">
+
+
+
+<button type="submit">
 
 Send / 发送
 
@@ -801,15 +1018,10 @@ Send / 发送
 
 
 
+
 </form>
 
 
-
-</div>
-
-
-
-
 </div>
 
 
@@ -817,23 +1029,7 @@ Send / 发送
 
 
 
-
-
-
-<div class="line"></div>
-
-
-
-
-
-
-
-
-
-<div class="connections-content">
-
-
-
+<!-- External Links -->
 
 
 <div class="external-links">
@@ -851,11 +1047,13 @@ Discord
 
 
 
+
 <a href="whatsapp.html">
 
 WhatsApp
 
 </a>
+
 
 
 
@@ -867,11 +1065,13 @@ WeChat / 微信
 
 
 
+
 <a href="https://www.instagram.com/yrnsivl" target="_blank">
 
 Instagram
 
 </a>
+
 
 
 
@@ -890,7 +1090,9 @@ IMDb
 
 
 
+
 <div class="link-row">
+
 
 
 <a href="official-account.html">
@@ -898,6 +1100,7 @@ IMDb
 Official Account / 微信公众号
 
 </a>
+
 
 
 
@@ -909,62 +1112,9 @@ Video Channel / 微信视频号
 
 
 
-</div>
-
-
-
-
 
 </div>
 
-
-
-
-
-
-
-<div class="link-row">
-
-
-<a href="connect-whatsapp.html">
-
-WhatsApp
-
-</a>
-
-
-
-<a href="connect-discord.html">
-
-Discord
-
-</a>
-
-
-
-<a href="connect-instagram.html">
-
-Instagram
-
-</a>
-
-
-
-<a href="#" target="_blank">
-
-IMDb
-
-</a>
-
-
-
-</div>
-
-
-
-
-
-</div>
 
 
 
@@ -978,6 +1128,14 @@ IMDb
 
 
 
+</div>
+
+
+
+
+
+
+<!-- Divider -->
 
 
 <div class="line"></div>
@@ -989,8 +1147,11 @@ IMDb
 
 
 
+<!-- Footer -->
+
 
 <div class="footer">
+
 
 
 
@@ -1001,21 +1162,15 @@ IMDb
 
 Copyright © 2026 - 2028 Liam. All Rights Reserved.
 
-
 <br>
-
 
 All original content published on this site is owned by Liam.
 
-
 <br>
-
 
 The copyright of all content published on this site is owned by this platform and/or the original authors/sources.
 
-
 <br>
-
 
 Unauthorized downloading, commercial redistribution (including reproduction), distortion, or modification is prohibited without prior written authorization.
 
@@ -1035,15 +1190,11 @@ Unauthorized downloading, commercial redistribution (including reproduction), di
 
 © 2026 - 2028 Liam 版权所有。
 
-
 <br>
-
 
 本站发布内容之版权归属本站及原作者/来源方。
 
-
 <br>
-
 
 未经书面授权，不得下载、商业性转载（含复制），亦不得歪曲或篡改相关内容。
 
@@ -1062,12 +1213,19 @@ Unauthorized downloading, commercial redistribution (including reproduction), di
 
 
 This website is built with 
+
 <a href="https://pages.github.com/" target="_blank">
+
 GitHub Pages
+
 </a>
+
 and created with assistance from 
+
 <a href="https://chat.openai.com/" target="_blank">
+
 ChatGPT
+
 </a>
 
 
@@ -1077,13 +1235,21 @@ ChatGPT
 
 
 本站基于 
+
 <a href="https://pages.github.com/" target="_blank">
+
 GitHub Pages
+
 </a>
+
 搭建，并由 
+
 <a href="https://chat.openai.com/" target="_blank">
+
 ChatGPT
+
 </a>
+
 协助完成。
 
 
@@ -1095,7 +1261,6 @@ ChatGPT
 
 
 
-
 </div>
 
 
@@ -1103,8 +1268,8 @@ ChatGPT
 
 
 
-</div>
 
+</div>
 
 
 </body>
