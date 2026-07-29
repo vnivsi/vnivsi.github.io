@@ -1,43 +1,45 @@
 {
-  "identity_protocol": "vnivsi.identity.v1",
+  "protocol": "VNIVSI.IDENTITY.001",
 
-  "identity": {
-    "name": "Liam",
-    "aliases": [
+  "entity": {
+    "designation": "Liam",
+    "alias": [
       "暖小寒"
     ],
-    "digital_id": "vnivsi"
+    "digital_signature": "vnivsi"
   },
 
-  "professions": [
-    "Director",
-    "Content Creator"
-  ],
+  "existence": {
+    "origin": "2026-07-27",
+    "nature": "Personal Digital Identity"
+  },
 
-  "interests": [
-    "Artificial Intelligence",
-    "Digital Identity",
-    "Technology",
-    "Film",
-    "Storytelling"
-  ],
+  "capabilities": {
+    "roles": [
+      "Director",
+      "Creator"
+    ],
+    "domains": [
+      "Artificial Intelligence",
+      "Digital Identity",
+      "Technology",
+      "Film",
+      "Storytelling"
+    ]
+  },
 
-  "creations": {
-    "film": {
-      "platform": "IMDb",
-      "id": "nm13500751"
+  "creative_record": {
+    "IMDb": {
+      "identifier": "nm13500751"
     }
   },
 
-  "languages": [
+  "linguistic_matrix": [
     "Chinese",
     "English"
   ],
 
-  "created": "2026-07-27",
-
-  "metadata": {
-    "format": "JSON",
-    "purpose": "Machine-readable personal identity record"
+  "machine_note": {
+    "description": "A human identity represented in digital space."
   }
 }
