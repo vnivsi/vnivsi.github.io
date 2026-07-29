@@ -1,1 +1,693 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Me · Liam</title>
+
+
+<style>
+
+* {
+    box-sizing:border-box;
+}
+
+
+html {
+    overflow-y:scroll;
+}
+
+
+body {
+
+    margin:0;
+
+    background:#faf9f7;
+
+    color:#222;
+
+    font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    "SF Pro Text",
+    "PingFang SC",
+    "Noto Sans SC",
+    "Microsoft YaHei",
+    Arial,
+    sans-serif;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+
+.container {
+
+    width:100%;
+
+    max-width:900px;
+
+    text-align:center;
+
+    padding:45px 30px 60px;
+
+}
+
+
+
+/* Avatar */
+
+.avatar {
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin:0 auto 18px;
+
+    border:1px solid #eeeeee;
+
+}
+
+
+
+/* Liam */
+
+.name {
+
+    font-size:24px;
+
+    font-weight:600;
+
+    letter-spacing:0.8px;
+
+    color:rgb(255,106,0);
+
+    margin-bottom:18px;
+
+}
+
+
+
+/* Philosophy */
+
+.identity {
+
+    font-size:14px;
+
+    line-height:1.8;
+
+    color:#777;
+
+    margin-bottom:30px;
+
+}
+
+
+
+/* Navigation */
+
+.nav {
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:22px;
+
+    flex-wrap:nowrap;
+
+    white-space:nowrap;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.nav a {
+
+    color:#222;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    position:relative;
+
+    padding-bottom:6px;
+
+}
+
+
+.nav a::after {
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    bottom:0;
+
+    height:1px;
+
+    background:transparent;
+
+}
+
+
+
+.nav a.active::after {
+
+    background:#222;
+
+}
+
+
+
+.nav a:hover {
+
+    color:rgb(255,106,0);
+
+}
+
+
+
+
+/* About */
+
+.about-content {
+
+    max-width:680px;
+
+    margin:0 auto;
+
+    color:#777;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+
+
+.language-block {
+
+    margin-bottom:45px;
+
+}
+
+
+
+.language-block p {
+
+    margin:8px 0;
+
+}
+
+
+
+.section-title {
+
+    margin-top:35px;
+
+    margin-bottom:20px;
+
+    font-weight:600;
+
+    color:#555;
+
+}
+
+
+
+/* Divider */
+
+.line {
+
+    width:50px;
+
+    height:1px;
+
+    background:#ddd;
+
+    margin:40px auto;
+
+}
+
+
+
+/* Footer */
+
+.footer {
+
+    max-width:900px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+    text-align:center;
+
+    color:#999;
+
+    font-size:11px;
+
+    line-height:1.5;
+
+}
+
+
+
+.footer-section {
+
+    margin-bottom:18px;
+
+}
+/* Built With */
+
+
+.built-with {
+
+    margin-top:28px;
+
+    font-size:12px;
+
+    line-height:1.8;
+
+    color:#888;
+
+}
+
+
+.legal-link {
+
+    margin-top:20px;
+
+    font-size:10px;
+
+    line-height:1.5;
+
+    text-align:center;
+
+}
+
+
+.legal-link a,
+.legal-link a:visited {
+
+    color:#999;
+
+    text-decoration:none;
+
+}
+
+
+.legal-link a:hover {
+
+    color:#ff6a00;
+
+}
+
+
+    
+.built-with a {
+
+    color:#888;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+
+
+.built-with a:hover {
+
+    color:rgb(255,106,0);
+
+}
+/* Mobile Responsive */
+
+@media (max-width:600px){
+
+
+.container {
+
+    padding:35px 20px 50px;
+
+}
+
+
+
+.avatar {
+
+    width:70px;
+
+    height:70px;
+
+}
+
+
+
+.name {
+
+    font-size:22px;
+
+}
+
+
+
+.identity {
+
+    font-size:13px;
+
+}
+
+
+
+.nav {
+
+    flex-wrap:wrap;
+
+    white-space:normal;
+
+    gap:15px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.nav a {
+
+    font-size:13px;
+
+}
+
+
+
+.connections-content {
+
+    max-width:100%;
+
+    font-size:14px;
+
+}
+
+
+
+.form-box {
+
+    max-width:100%;
+
+}
+
+
+
+.external-links {
+
+    max-width:100%;
+
+}
+
+
+
+.link-row {
+
+    flex-wrap:wrap;
+
+    gap:15px 25px;
+
+}
+
+
+
+.footer {
+
+    padding:0 10px;
+
+}
+
+
+}
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<img class="avatar" src="avatar.png" alt="Liam Avatar">
+
+
+<div class="name">
+
+Liam
+
+</div>
+
+
+
+<div class="identity">
+
+Built with curiosity, technology and a passion for the digital world.
+
+<br>
+
+因好奇而探索，因技术而连接，与数字世界同行。
+
+</div>
+
+
+
+
+<div class="nav">
+
+
+<a href="index.html">
+
+Home / 首页
+
+</a>
+
+
+<a href="blog.html">
+
+Blog / 文字
+
+</a>
+
+
+<a href="moments.html">
+
+Moments / 瞬间
+
+</a>
+
+
+<a href="connections.html">
+
+Connections / 连接
+
+</a>
+
+
+<a href="about.html" class="active">
+
+About Me / 关于我
+
+</a>
+
+
+</div>
+
+
+
+
+<div class="about-content">
+
+
+
+<div class="article-content">
+
+<h1>
+The Beginning of a New Digital Identity
+</h1>
+
+<div class="article-date">
+2026-07-27
+</div>
+
+<p>
+On July 27, 2026, I began creating this personal digital space while exploring digital identity, the online world, and the possibilities of collaboration between humans and artificial intelligence.
+</p>
+
+<p>
+This website is built with GitHub Pages and created with assistance from ChatGPT, including its structure, design planning, and implementation.
+</p>
+
+<p>
+It is not only a personal homepage, but also a long-term digital space for recording thoughts, experiences, exploration, and connections.
+</p>
+
+<p>
+As the digital world continues to evolve, personal identity is no longer limited to the physical world. Everyone can build a unique digital presence to preserve memories, express ideas, and connect with the future.
+</p>
+
+<p>
+The creation of this website represents a new exploration and the beginning of a new journey.
+</p>
+
+<p>
+From this point forward, this space will record moments of learning, discovery, creation, and connection with the digital world.
+</p>
+
+<p>
+No matter how technology changes in the future, this place will remain the starting point of my personal digital journey, preserving the stories created along the way.
+</p>
+
+<hr>
+
+<h2>
+关于本站
+</h2>
+
+<p>
+2026年7月27日，在探索个人数字身份、网络世界以及人与人工智能协作的过程中，我开始创建这个属于自己的数字空间。
+</p>
+
+<p>
+本站基于 GitHub Pages 搭建，并在 ChatGPT 的协助下完成结构设计、页面规划以及代码实现。
+</p>
+
+<p>
+它不仅是一个个人主页，也是一个用于长期记录思考、经历、探索与连接的数字空间。
+</p>
+
+<p>
+随着数字世界不断发展，个人身份不再只存在于现实世界之中。每个人都可以建立属于自己的数字存在，用于保存记忆、表达思想，并连接未来。
+</p>
+
+<p>
+这个网站的建立，是一次新的探索，也是一个新的开始。
+</p>
+
+<p>
+从这里开始，这个空间将记录学习、发现、创造，以及与数字世界产生连接的每一个瞬间。
+</p>
+
+<p>
+无论未来技术如何变化，这里都将作为个人数字旅程的起点，保存一路走来的故事。
+</p>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="footer-section">
+
+
+© 2026 Liam 版权所有。
+
+<br>
+
+本站发布内容之版权归属本站及原作者/来源方。
+
+<br>
+
+未经书面授权，不得下载、商业性转载（含复制），亦不得歪曲或篡改相关内容。
+
+
+</div>
+<div class="built-with">
+
+
+This website is built with 
+<a href="https://pages.github.com/" target="_blank">
+GitHub Pages
+</a>
+and created with assistance from 
+<a href="https://chat.openai.com/" target="_blank">
+ChatGPT
+</a>.
+
+
+
+<br>
+
+
+
+本站基于 
+<a href="https://pages.github.com/" target="_blank">
+GitHub Pages
+</a>
+搭建，并由 
+<a href="https://chat.openai.com/" target="_blank">
+ChatGPT
+</a>
+协助完成。
+
+
+
+</div>
+
+<div class="legal-link">
+
+<a href="legal.html">
+Privacy · Terms · Integrity
+<br>
+隐私 · 条款 · 完整声明
+</a>
+
+</div>
+    
+</div>
+
+
+
+</div>
+
+
+
+</body>
+
+</html>
