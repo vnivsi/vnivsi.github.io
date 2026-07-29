@@ -12,462 +12,314 @@
 
 <style>
 
-* {
-    box-sizing:border-box;
+*{
+box-sizing:border-box;
 }
 
 
-html {
-    overflow-y:scroll;
-}
+body{
 
+margin:0;
 
-body {
+background:#faf9f7;
 
-    margin:0;
+font-family:
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+"PingFang SC",
+"Hiragino Sans GB",
+"Microsoft YaHei",
+sans-serif;
 
-    background:#faf9f7;
-
-    color:#222;
-
-    font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Display",
-    "SF Pro Text",
-    "PingFang SC",
-    "Noto Sans SC",
-    "Microsoft YaHei",
-    Arial,
-    sans-serif;
-
-    min-height:100vh;
-
-    display:flex;
-
-    justify-content:center;
+color:#777;
 
 }
 
 
+/* container */
 
-.container {
+.container{
 
-    width:100%;
+max-width:900px;
 
-    max-width:900px;
+margin:0 auto;
 
-    text-align:center;
+padding:40px 20px;
 
-    padding:45px 30px 60px;
+text-align:center;
 
 }
 
 
 
-/* Avatar */
+/* header */
 
-.avatar {
 
-    width:80px;
+.avatar{
 
-    height:80px;
+width:80px;
 
-    border-radius:50%;
+height:80px;
 
-    object-fit:cover;
+border-radius:50%;
 
-    display:block;
-
-    margin:0 auto 18px;
-
-    border:1px solid #eeeeee;
+border:1px solid #eee;
 
 }
 
 
 
-/* Liam */
+.name{
 
-.name {
+margin-top:20px;
 
-    font-size:24px;
+font-size:26px;
 
-    font-weight:600;
+font-weight:600;
 
-    letter-spacing:0.8px;
-
-    color:rgb(255,106,0);
-
-    margin-bottom:18px;
+color:rgb(255,106,0);
 
 }
 
 
 
-/* Philosophy */
+.motto{
 
-.identity {
+margin-top:25px;
 
-    font-size:14px;
+font-size:14px;
 
-    line-height:1.8;
+line-height:1.8;
 
-    color:#777;
-
-    margin-bottom:30px;
+color:#777;
 
 }
 
 
 
-/* Navigation */
+/* navigation */
 
-.nav {
 
-    display:flex;
+.nav{
 
-    justify-content:center;
+margin-top:45px;
 
-    align-items:center;
+font-size:14px;
 
-    gap:22px;
+font-weight:600;
 
-    flex-wrap:nowrap;
+}
 
-    white-space:nowrap;
 
-    margin-bottom:30px;
+.nav a{
+
+color:#333;
+
+text-decoration:none;
+
+margin:0 10px;
+
+}
+
+
+.nav a:hover{
+
+color:rgb(255,106,0);
 
 }
 
 
 
-.nav a {
-
-    color:#222;
-
-    text-decoration:none;
-
-    font-size:14px;
-
-    font-weight:600;
-
-    position:relative;
-
-    padding-bottom:6px;
-
-}
+/* legal content */
 
 
-.nav a::after {
+.legal-content{
 
-    content:"";
+max-width:680px;
 
-    position:absolute;
+margin:60px auto 0;
 
-    left:0;
+font-size:14px;
 
-    right:0;
+line-height:1.8;
 
-    bottom:0;
-
-    height:1px;
-
-    background:transparent;
+color:#777;
 
 }
 
 
 
-.nav a.active::after {
+.section-title{
 
-    background:#222;
+margin-top:45px;
 
-}
+margin-bottom:20px;
 
+font-size:16px;
 
+font-weight:600;
 
-.nav a:hover {
-
-    color:rgb(255,106,0);
-
-}
-
-
-
-
-/* About */
-
-.legal-content {
-
-    max-width:680px;
-
-    margin:0 auto;
-
-    color:#777;
-
-    font-size:14px;
-
-    line-height:1.8;
-
-}
-
-.legal-content h2 {
-
-    font-size:18px;
-
-    font-weight:600;
-
-    color:#333;
-
-    margin-top:40px;
-
-    margin-bottom:8px;
-
-}
-
-
-.legal-content h3 {
-
-    font-size:14px;
-
-    font-weight:400;
-
-    color:#777;
-
-    margin-bottom:20px;
+color:#555;
 
 }
 
 
 
+.legal-content p{
 
-
-.language-block {
-
-    margin-bottom:45px;
+margin:12px 0;
 
 }
 
 
 
-.language-block p {
+hr{
 
-    margin:8px 0;
+border:none;
 
-}
+border-top:1px solid #ddd;
 
-
-
-.section-title {
-
-    margin-top:35px;
-
-    margin-bottom:20px;
-
-    font-weight:600;
-
-    color:#555;
+margin:35px 0;
 
 }
 
 
 
-/* Divider */
-
-.line {
-
-    width:50px;
-
-    height:1px;
-
-    background:#ddd;
-
-    margin:40px auto;
-
-}
+/* footer */
 
 
+.footer{
 
-/* Footer */
+margin-top:70px;
 
-.footer {
+font-size:12px;
 
-    max-width:900px;
+line-height:1.8;
 
-    margin-left:auto;
-
-    margin-right:auto;
-
-    text-align:center;
-
-    color:#999;
-
-    font-size:11px;
-
-    line-height:1.5;
+color:#aaa;
 
 }
 
 
+/* Mobile */
 
-.footer-section {
-
-    margin-bottom:18px;
-
-}
-/* Built With */
-
-
-.built-with {
-
-    margin-top:28px;
-
-    font-size:12px;
-
-    line-height:1.8;
-
-    color:#888;
-
-}
-
-
-
-.built-with a {
-
-    color:#888;
-
-    text-decoration:none;
-
-    font-weight:600;
-
-}
-
-
-
-.built-with a:hover {
-
-    color:rgb(255,106,0);
-
-}
-/* Mobile Responsive */
 
 @media (max-width:600px){
 
 
-.container {
+.container{
 
-    padding:35px 20px 50px;
-
-}
-
-
-
-.avatar {
-
-    width:70px;
-
-    height:70px;
+padding:35px 20px 50px;
 
 }
 
 
 
-.name {
+.avatar{
 
-    font-size:22px;
+width:70px;
 
-}
-
-
-
-.identity {
-
-    font-size:13px;
+height:70px;
 
 }
 
 
 
-.nav {
+.name{
 
-    flex-wrap:wrap;
-
-    white-space:normal;
-
-    gap:15px;
-
-    margin-bottom:30px;
+font-size:22px;
 
 }
 
 
 
-.nav a {
+.motto{
 
-    font-size:13px;
+font-size:13px;
 
-}
+line-height:1.8;
 
-
-
-.connections-content {
-
-    max-width:100%;
-
-    font-size:14px;
+margin-top:22px;
 
 }
 
 
 
-.form-box {
+.nav{
 
-    max-width:100%;
+margin-top:35px;
 
-}
+font-size:13px;
 
-
-
-.external-links {
-
-    max-width:100%;
+line-height:1.8;
 
 }
 
 
 
-.link-row {
+.nav a{
 
-    flex-wrap:wrap;
-
-    gap:15px 25px;
+margin:0 6px;
 
 }
 
 
 
-.footer {
+.legal-content{
 
-    padding:0 10px;
+margin-top:45px;
+
+font-size:13px;
+
+line-height:1.8;
 
 }
 
+
+
+.section-title{
+
+font-size:15px;
+
+margin-top:35px;
+
+margin-bottom:15px;
+
+}
+
+
+
+hr{
+
+margin:30px 0;
+
+}
+
+
+
+.footer{
+
+font-size:11px;
+
+padding:0 10px;
+
+}
 
 }
 </style>
 
+
 </head>
-
-
 <body>
 
 
 <div class="container">
 
 
-<img class="avatar" src="avatar.png" alt="Liam Avatar">
+<!-- Header -->
+
+<img src="avatar.png" class="avatar">
 
 
 <div class="name">
@@ -477,8 +329,7 @@ Liam
 </div>
 
 
-
-<div class="identity">
+<div class="motto">
 
 Built with curiosity, technology and a passion for the digital world.
 
@@ -490,118 +341,126 @@ Built with curiosity, technology and a passion for the digital world.
 
 
 
+<!-- Navigation -->
 
 <div class="nav">
 
-
 <a href="index.html">
-
 Home / 首页
-
 </a>
 
 
 <a href="blog.html">
-
 Blog / 文字
-
 </a>
 
 
 <a href="moments.html">
-
 Moments / 瞬间
-
 </a>
 
 
 <a href="connections.html">
-
 Connections / 连接
-
 </a>
 
 
-<a href="about.html" class="active">
-
+<a href="about.html">
 About Me / 关于我
-
 </a>
-
 
 </div>
 
 
+
+<!-- Legal Content -->
 
 
 <div class="legal-content">
 
 
-<h2>Privacy Policy</h2>
-<h3>隐私政策</h3>
+<div class="section-title">
+
+Privacy · 隐私
+
+</div>
+
 
 <p>
-This website is the personal digital space of Liam (vnivsi).
-It is created to share personal information, works, thoughts and digital identity.
+
+This website is the personal digital space of Liam (vnivsi). It is created to share personal information, works, thoughts and digital identity.
+
 </p>
 
+
 <p>
-本网站是 Liam（vnivsi）的个人数字空间，
-用于展示个人信息、作品、观点以及数字身份相关内容。
+
+本站是 Liam（vnivsi）的个人数字空间，用于展示个人信息、作品、观点以及数字身份相关内容。
+
 </p>
+
 
 
 <hr>
 
 
-<h2>Terms of Use</h2>
-<h3>使用条款</h3>
+
+<div class="section-title">
+
+Terms · 条款
+
+</div>
+
 
 <p>
-By accessing this website, you acknowledge and agree to respect the content and purpose of this personal digital space.
+
+By accessing this website, you acknowledge and agree to respect the content, purpose and usage principles of this personal digital space.
+
 </p>
 
+
 <p>
-访问本网站，即表示您理解并尊重本站作为个人数字空间的内容定位和使用原则。
+
+访问本网站，即表示您理解并尊重本站作为个人数字空间的内容定位、使用原则以及相关规则。
+
 </p>
+
 
 
 <hr>
 
 
-<h2>Integrity Statement</h2>
-<h3>完整声明</h3>
+
+<div class="section-title">
+
+Integrity · 完整声明
+
+</div>
+
 
 <p>
+
 This website represents Liam's official digital presence under the identity "vnivsi".
+
 </p>
+
 
 <p>
+
 本网站代表 Liam 以“vnivsi”为数字身份建立的官方网络空间。
+
 </p>
 
 
-</div>
-
-
 
 </div>
-
-
-
-
-
-<div class="line"></div>
-
-
-
+<!-- Footer -->
 
 
 <div class="footer">
 
 
-<div class="footer-section">
-
+<p>
 
 Copyright © 2026 - 2028 Liam. All Rights Reserved.
 
@@ -617,15 +476,11 @@ The copyright of all content published on this site is owned by this platform an
 
 Unauthorized downloading, commercial redistribution (including reproduction), distortion, or modification is prohibited without prior written authorization.
 
-
-</div>
-
+</p>
 
 
 
-
-<div class="footer-section">
-
+<p>
 
 © 2026 - 2028 Liam 版权所有。
 
@@ -637,48 +492,36 @@ Unauthorized downloading, commercial redistribution (including reproduction), di
 
 未经书面授权，不得下载、商业性转载（含复制），亦不得歪曲或篡改相关内容。
 
+</p>
 
-</div>
-<div class="built-with">
 
+
+<p class="built-with">
 
 This website is built with 
-<a href="https://pages.github.com/" target="_blank">
-GitHub Pages
-</a>
+<b>GitHub Pages</b>
 and created with assistance from 
-<a href="https://chat.openai.com/" target="_blank">
-ChatGPT
-</a>
-
-
+<b>ChatGPT</b>
 
 <br>
 
-
-
 本站基于 
-<a href="https://pages.github.com/" target="_blank">
-GitHub Pages
-</a>
+<b>GitHub Pages</b>
 搭建，并由 
-<a href="https://chat.openai.com/" target="_blank">
-ChatGPT
-</a>
+<b>ChatGPT</b>
 协助完成。
 
+</p>
 
 
 </div>
 
-</div>
-
 
 
 </div>
-
 
 
 </body>
+
 
 </html>
