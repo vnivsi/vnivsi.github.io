@@ -1,5 +1,5 @@
 {
-  "protocol": "VNIVSI.IDENTITY.001",
+  "protocol": "VNIVSI.IDENTITY.V1",
 
   "entity": {
     "designation": "Liam",
@@ -40,6 +40,6 @@
   ],
 
   "machine_note": {
-    "description": "A human identity represented in digital space."
+    "description": "A human identity represented in the digital world."
   }
 }
