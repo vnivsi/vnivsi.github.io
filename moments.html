@@ -739,6 +739,10 @@ let nextButton = currentIndex < moments.length - 1
 : '<span></span>';
 
 
+let pageNumber =
+`${String(currentIndex + 1).padStart(3,'0')} / ${String(moments.length).padStart(3,'0')}`;
+
+    
 let mediaHTML = "";
 
 if (moment.type === "image") {
@@ -786,7 +790,7 @@ ${mediaHTML}
 
 
 <div class="moment-info">
-${moment.date}${moment.title ? " · " + moment.title : ""}
+${moment.date}${moment.title ? " · " + moment.title : ""} · ${pageNumber}
 </div>
 
 
