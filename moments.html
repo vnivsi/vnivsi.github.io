@@ -363,7 +363,16 @@ body {
     line-height: 1.6;
     margin-top: 12px;
 }
-    
+
+.moment-image {
+    max-width:600px;
+    max-height:600px;
+    width:auto;
+    height:auto;
+    display:block;
+    margin:0 auto 20px;
+}
+
 /* Mobile Responsive */
 
 @media (max-width:600px){
@@ -672,6 +681,11 @@ fetch("moments.json")
     const moment = data[0];
 
 document.getElementById("moment-display").innerHTML = `
+
+<img 
+class="moment-image"
+src="${moment.image}"
+>
 
 <div class="moment-info">
     ${moment.date} · ${moment.title}
