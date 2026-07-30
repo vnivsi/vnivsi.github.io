@@ -663,29 +663,17 @@ fetch("moments.json")
 
     const moment = data[0];
 
-    document.getElementById("moment-display").innerHTML = `
+document.getElementById("moment-display").innerHTML = `
 
-        <div class="moment-date">
-            ${moment.date}
-        </div>
+    <div class="moment-date">
+        ${moment.date}
+    </div>
 
-        <h2>
-            ${moment.title.en}
-        </h2>
+    <div class="moment-title">
+        ${moment.title}
+    </div>
 
-        <h3>
-            ${moment.title.zh}
-        </h3>
-
-        <p>
-            ${moment.description.en}
-        </p>
-
-        <p>
-            ${moment.description.zh}
-        </p>
-
-    `;
+`;
 
 });
 
