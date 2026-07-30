@@ -5,5 +5,29 @@
     "title": "A New Digital Beginning · 一个新的数字身份开始",
     "type": "image",
     "src": "assets/moments/0001.webp"
+  },
+
+  {
+    "id": "002",
+    "date": "2026-07-28",
+    "title": "",
+    "type": "image",
+    "src": "assets/moments/0002.webp"
+  },
+
+  {
+    "id": "003",
+    "date": "2026-07-29",
+    "title": "",
+    "type": "image",
+    "src": "assets/moments/0003.webp"
+  },
+
+  {
+    "id": "004",
+    "date": "2026-07-30",
+    "title": "",
+    "type": "image",
+    "src": "assets/moments/0004.webp"
   }
 ]
