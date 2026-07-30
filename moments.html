@@ -655,6 +655,44 @@ Privacy · Terms · Integrity
 
 
 
+<script>
+
+fetch("moments.json")
+.then(response => response.json())
+.then(data => {
+
+    const moment = data[0];
+
+    document.getElementById("moment-display").innerHTML = `
+
+        <div class="moment-date">
+            ${moment.date}
+        </div>
+
+        <h2>
+            ${moment.title.en}
+        </h2>
+
+        <h3>
+            ${moment.title.zh}
+        </h3>
+
+        <p>
+            ${moment.description.en}
+        </p>
+
+        <p>
+            ${moment.description.zh}
+        </p>
+
+    `;
+
+});
+
+</script>
+
+
+    
 </body>
 
 </html>
