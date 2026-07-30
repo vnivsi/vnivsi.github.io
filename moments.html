@@ -682,7 +682,11 @@ fetch("moments.json")
 .then(response => response.json())
 .then(data => {
 
-    const moment = data[0];
+let moments = data;
+
+let currentIndex = 0;
+
+let moment = moments[currentIndex];
 
 let mediaHTML = "";
 
