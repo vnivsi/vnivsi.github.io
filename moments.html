@@ -373,6 +373,42 @@ body {
     margin:0 auto 10px;
 }
 
+.moment-control {
+
+    width:480px;
+    max-width:90%;
+
+    margin:25px auto 15px;
+
+    display:flex;
+    justify-content:space-between;
+
+}
+
+
+.moment-control button {
+
+    border:none;
+
+    background:none;
+
+    color:#999;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    padding:0;
+
+}
+
+
+.moment-control button:hover {
+
+    color:rgb(255,106,0);
+
+}
+
 /* Mobile Responsive */
 
 @media (max-width:600px){
@@ -686,6 +722,9 @@ let moments = data;
 
 let currentIndex = 0;
 
+
+function renderMoment(){
+
 let moment = moments[currentIndex];
 
 let mediaHTML = "";
@@ -721,17 +760,63 @@ if (moment.type === "video") {
 
 document.getElementById("moment-display").innerHTML = `
 
+
+<div class="moment-control">
+
+<button id="prev-button">←</button>
+
+<button id="next-button">→</button>
+
+</div>
+
+
 ${mediaHTML}
 
 
 <div class="moment-info">
-${moment.date} · ${moment.title}
+${moment.date}${moment.title ? " · " + moment.title : ""}
 </div>
+
 
 `;
 
+}
+
+renderMoment();
+    
 });
 
+document.addEventListener("click", function(e){
+
+
+    if(e.target.id === "prev-button"){
+
+        if(currentIndex > 0){
+
+            currentIndex--;
+
+            renderMoment();
+
+        }
+
+    }
+
+
+    if(e.target.id === "next-button"){
+
+        if(currentIndex < moments.length - 1){
+
+            currentIndex++;
+
+            renderMoment();
+
+        }
+
+    }
+
+
+});
+    
 </script>
 
 
