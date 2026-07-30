@@ -1,61 +1,25 @@
 [
   {
-    "id": "001",
-    "date": "2026-07-27",
-    "title": "",
-    "type": "image",
-    "src": "assets/moments/0001.webp"
+    "id":"001",
+    "date":"2026-07-27",
+    "title":"",
+    "type":"image",
+    "src":"assets/moments/0001.webp"
   },
-
   {
-    "id": "002",
-    "date": "2026-07-28",
-    "title": "",
-    "type": "image",
-    "src": "assets/moments/0002.webp"
-  },
-
-  {
-    "id": "003",
-    "date": "2026-07-29",
-    "title": "",
-    "type": "image",
-    "src": "assets/moments/0003.webp"
-  },
-
-  {
-    "id": "004",
-    "date": "2026-07-30",
-    "title": "",
-    "type": "image",
-    "src": "assets/moments/0004.webp"
-  },
-
-  {
-    "id": "005",
-    "date": "2026-07-31",
-    "title": "",
+    "id":"005",
+    "date":"2026-07-31",
+    "title":"",
     "type":"video",
-    "platform":"local"
-    "src": "assets/moments/0001.mp4"
-},
-
+    "platform":"local",
+    "src":"assets/moments/0001.mp4"
+  },
   {
-    "id": "006",
-    "date": "2026-07-31",
-    "title": "",
+    "id":"007",
+    "date":"2026-07-31",
+    "title":"",
     "type":"video",
-    "platform":"local"
-    "src": "assets/moments/0002.mp4"
-},
-
-    {
-    "id": "007",
-    "date": "2026-07-31",
-    "title": "",
-    "type":"video",
-    "platform":"youtube"
-    "src": "H-rls7leIX8"
-}
-  
+    "platform":"youtube",
+    "src":"H-rls7leIX8"
+  }
 ]
