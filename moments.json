@@ -3,6 +3,7 @@
     "id": "001",
     "date": "2026-07-27",
     "title": "A New Digital Beginning · 一个新的数字身份开始",
-    "image": "assets/moments/0001.webp"
+    "type": "image",
+    "src": "assets/moments/0001.webp"
   }
 ]
