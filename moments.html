@@ -759,17 +759,145 @@ if (moment.type === "image") {
 }
 
 
-if (moment.type === "video") {
+if(moment.type === "video"){
 
-    mediaHTML = `
 
-    <video 
-    class="moment-media"
-    controls
-    src="${moment.src}">
-    </video>
+    // 本地视频 / 直接 mp4 外链
+    if(
+        moment.platform === "local" ||
+        moment.platform === "url"
+    ){
 
-    `;
+        mediaHTML = `
+        <video
+        class="moment-media"
+        controls
+        src="${moment.src}">
+        </video>
+        `;
+
+    }
+
+
+    // YouTube
+    else if(moment.platform === "youtube"){
+
+        mediaHTML = `
+        <iframe
+        class="moment-media"
+        src="https://www.youtube.com/embed/${moment.src}"
+        frameborder="0"
+        allowfullscreen>
+        </iframe>
+        `;
+
+    }
+
+
+    // Bilibili
+    else if(moment.platform === "bilibili"){
+
+        mediaHTML = `
+        <iframe
+        class="moment-media"
+        src="https://player.bilibili.com/player.html?bvid=${moment.src}"
+        frameborder="0"
+        allowfullscreen>
+        </iframe>
+        `;
+
+    }
+
+
+    // TikTok
+    else if(moment.platform === "tiktok"){
+
+        mediaHTML = `
+        <iframe
+        class="moment-media"
+        src="https://www.tiktok.com/embed/v2/${moment.src}"
+        frameborder="0"
+        allowfullscreen>
+        </iframe>
+        `;
+
+    }
+
+
+    // Instagram
+    else if(moment.platform === "instagram"){
+
+        mediaHTML = `
+        <iframe
+        class="moment-media"
+        src="https://www.instagram.com/reel/${moment.src}/embed"
+        frameborder="0"
+        allowfullscreen>
+        </iframe>
+        `;
+
+    }
+
+
+    // 抖音
+    else if(moment.platform === "douyin"){
+
+        mediaHTML = `
+        <iframe
+        class="moment-media"
+        src="https://www.douyin.com/embed/${moment.src}"
+        frameborder="0"
+        allowfullscreen>
+        </iframe>
+        `;
+
+    }
+
+
+    // 微博
+    else if(moment.platform === "weibo"){
+
+        mediaHTML = `
+        <iframe
+        class="moment-media"
+        src="https://weibo.com/tv/show/${moment.src}"
+        frameborder="0"
+        allowfullscreen>
+        </iframe>
+        `;
+
+    }
+
+
+    // 小红书
+    else if(moment.platform === "xiaohongshu"){
+
+        mediaHTML = `
+        <iframe
+        class="moment-media"
+        src="https://www.xiaohongshu.com/explore/${moment.src}"
+        frameborder="0"
+        allowfullscreen>
+        </iframe>
+        `;
+
+    }
+
+
+    // AcFun
+    else if(moment.platform === "acfun"){
+
+        mediaHTML = `
+        iframe
+        class="moment-media"
+        src="https://www.acfun.cn/v/${moment.src}"
+        frameborder="0"
+        allowfullscreen>
+        </iframe>
+        `;
+
+    }
+
 
 }
 
