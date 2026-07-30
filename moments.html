@@ -784,33 +784,41 @@ ${moment.date}${moment.title ? " · " + moment.title : ""}
 
 renderMoment();
 
-document.addEventListener("click", function(e){
+});
+
+    document.addEventListener("click", function(e){
 
 
-    if(e.target.id === "prev-button"){
+        if(e.target.id === "prev-button"){
 
-        if(currentIndex > 0){
+            if(currentIndex > 0){
 
-            currentIndex--;
+                currentIndex--;
 
-            renderMoment();
+                renderMoment();
 
-        }
-
-    }
-
-
-    if(e.target.id === "next-button"){
-
-        if(currentIndex < moments.length - 1){
-
-            currentIndex++;
-
-            renderMoment();
+            }
 
         }
 
-    }
+
+        if(e.target.id === "next-button"){
+
+            if(currentIndex < moments.length - 1){
+
+                currentIndex++;
+
+                renderMoment();
+
+            }
+
+        }
+
+
+    });
+
+
+    renderMoment();
 
 
 });
