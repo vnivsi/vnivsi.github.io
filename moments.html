@@ -717,7 +717,10 @@ Privacy · Terms · Integrity
 <script>
 
 fetch("moments.json?v=999")
-.then(response => response.json())
+.then(response => {
+    console.log(response);
+    return response.json();
+})
 .then(data => {
 
 let moments = data;
