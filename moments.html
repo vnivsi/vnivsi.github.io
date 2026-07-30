@@ -782,6 +782,41 @@ ${moment.date}${moment.title ? " · " + moment.title : ""}
 
 }
 
+    document.addEventListener("click", function(e){
+
+
+        if(e.target.id === "prev-button"){
+
+            if(currentIndex > 0){
+
+                currentIndex--;
+
+                renderMoment();
+
+            }
+
+        }
+
+
+        if(e.target.id === "next-button"){
+
+            if(currentIndex < moments.length - 1){
+
+                currentIndex++;
+
+                renderMoment();
+
+            }
+
+        }
+
+
+    });
+
+
+
+});
+
 renderMoment();
 
 });
@@ -817,8 +852,6 @@ renderMoment();
 
     });
 
-
-    renderMoment();
 
 
 });
