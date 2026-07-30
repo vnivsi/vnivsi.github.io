@@ -1001,7 +1001,56 @@ document.addEventListener("keydown", function(e){
 
 });
 
-    
+
+let touchStartX = 0;
+
+
+document.addEventListener("touchstart", function(e){
+
+    touchStartX = e.touches[0].clientX;
+
+});
+
+
+document.addEventListener("touchend", function(e){
+
+    let touchEndX = e.changedTouches[0].clientX;
+
+    let distance = touchEndX - touchStartX;
+
+
+    // 左滑 下一张
+
+    if(distance < -50){
+
+        if(currentIndex < moments.length - 1){
+
+            currentIndex++;
+
+            renderMoment();
+
+        }
+
+    }
+
+
+    // 右滑 上一张
+
+    if(distance > 50){
+
+        if(currentIndex > 0){
+
+            currentIndex--;
+
+            renderMoment();
+
+        }
+
+    }
+
+});
+
+
 renderMoment();
 
 
