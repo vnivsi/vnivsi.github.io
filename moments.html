@@ -364,7 +364,7 @@ body {
     margin-top: 12px;
 }
 
-.moment-image {
+.moment-media {
     max-width:480px;
     max-height:480px;
     width:auto;
@@ -377,7 +377,7 @@ body {
 
 @media (max-width:600px){
 
-.moment-image {
+.moment-media {
     max-width:90%;
     max-height:90vh;
 }
@@ -684,15 +684,44 @@ fetch("moments.json")
 
     const moment = data[0];
 
+let mediaHTML = "";
+
+if (moment.type === "image") {
+
+    mediaHTML = `
+
+    <img 
+    class="moment-media"
+    src="${moment.src}"
+    >
+
+    `;
+
+}
+
+
+if (moment.type === "video") {
+
+    mediaHTML = `
+
+    <video 
+    class="moment-media"
+    controls
+    src="${moment.src}">
+    </video>
+
+    `;
+
+}
+
+
 document.getElementById("moment-display").innerHTML = `
 
-<img 
-class="moment-image"
-src="${moment.image}"
->
+${mediaHTML}
+
 
 <div class="moment-info">
-    ${moment.date} · ${moment.title}
+${moment.date} · ${moment.title}
 </div>
 
 `;
