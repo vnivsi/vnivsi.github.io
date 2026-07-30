@@ -36,7 +36,7 @@
     "date": "2026-07-31",
     "title": "",
     "type":"video",
-    "source":"local"
+    "platform":"local"
     "src": "assets/moments/0001.mp4"
 },
 
@@ -45,7 +45,7 @@
     "date": "2026-07-31",
     "title": "",
     "type":"video",
-    "source":"local"
+    "platform":"local"
     "src": "assets/moments/0002.mp4"
 }
 
@@ -54,6 +54,8 @@
     "date": "2026-07-31",
     "title": "",
     "type":"video",
-    "source":"youtube"
+    "platform":"youtube"
     "src": "H-rls7leIX8"
+}
+  
 ]
