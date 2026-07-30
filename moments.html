@@ -673,13 +673,9 @@ fetch("moments.json")
 
 document.getElementById("moment-display").innerHTML = `
 
-    <div class="moment-date">
-        ${moment.date}
-    </div>
-
-    <div class="moment-title">
-        ${moment.title}
-    </div>
+<div class="moment-info">
+    ${moment.date} · ${moment.title}
+</div>
 
 `;
 
