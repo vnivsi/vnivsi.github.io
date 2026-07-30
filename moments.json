@@ -2,14 +2,7 @@
   {
     "id": "001",
     "date": "2026-07-27",
-    "title": {
-      "en": "A New Digital Beginning",
-      "zh": "一个新的数字身份开始"
-    },
-    "image": "assets/moments/001.webp",
-    "description": {
-      "en": "The first captured moment of Liam's digital space.",
-      "zh": "Liam 数字空间的第一个记录瞬间。"
-    }
+    "title": "A New Digital Beginning · 一个新的数字身份开始",
+    "image": "assets/moments/001.webp"
   }
 ]
