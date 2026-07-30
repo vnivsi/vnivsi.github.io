@@ -377,6 +377,94 @@ iframe.moment-media {
     border:0;
 }
 
+.loading {
+    font-size:18px;
+    color:#999;
+    letter-spacing:5px;
+}
+
+.moment-image {
+    cursor:zoom-in;
+}
+
+
+.lightbox {
+    position:fixed;
+    inset:0;
+    z-index:9999;
+
+    display:none;
+    align-items:center;
+    justify-content:center;
+
+    padding:24px;
+
+    background:rgba(0,0,0,.88);
+
+    cursor:zoom-out;
+}
+
+
+.lightbox.is-open {
+    display:flex;
+}
+
+
+.lightbox-image {
+    display:block;
+
+    max-width:100%;
+    max-height:100%;
+
+    width:auto;
+    height:auto;
+
+    object-fit:contain;
+
+    cursor:zoom-out;
+}
+
+.moment-image {
+    cursor:zoom-in;
+}
+
+
+.lightbox {
+    position:fixed;
+    inset:0;
+    z-index:9999;
+
+    display:none;
+    align-items:center;
+    justify-content:center;
+
+    padding:24px;
+
+    background:rgba(0,0,0,.88);
+
+    cursor:zoom-out;
+}
+
+
+.lightbox.is-open {
+    display:flex;
+}
+
+
+.lightbox-image {
+    display:block;
+
+    max-width:100%;
+    max-height:100%;
+
+    width:auto;
+    height:auto;
+
+    object-fit:contain;
+
+    cursor:zoom-out;
+}
+
 .moment-control {
 
     max-width:480px;
@@ -608,7 +696,9 @@ About Me / 关于我
 
 <div id="moment-display">
 
-Loading...
+    <div class="loading">
+        ·
+    </div>
 
 </div>
 
@@ -617,7 +707,16 @@ Loading...
 </div>
 
 
+<div id="lightbox" class="lightbox" aria-hidden="true">
 
+    <img
+    id="lightbox-image"
+    class="lightbox-image"
+    src=""
+    alt=""
+    >
+
+</div>
 
 
 <div class="line"></div>
@@ -755,12 +854,12 @@ let mediaHTML = "";
 if (moment.type === "image") {
 
     mediaHTML = `
-
-    <img 
-    class="moment-media"
+    <img
+    class="moment-media moment-image"
     src="${moment.src}"
+    alt="${moment.title || moment.date}"
+    data-full-src="${moment.src}"
     >
-
     `;
 
 }
@@ -942,7 +1041,45 @@ ${moment.date}${moment.title ? " · " + moment.title : ""} · ${pageNumber}
 
 }
 
+function closeLightbox(){
+
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightbox-image");
+
+    lightbox.classList.remove("is-open");
+    lightbox.setAttribute("aria-hidden", "true");
+
+    lightboxImage.src = "";
+
+    document.body.style.overflow = "";
+
+}
+    
 document.addEventListener("click", function(e){
+
+    if(e.target.classList.contains("moment-image")){
+
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImage = document.getElementById("lightbox-image");
+
+        lightboxImage.src = e.target.dataset.fullSrc;
+        lightboxImage.alt = e.target.alt || "";
+
+        lightbox.classList.add("is-open");
+        lightbox.setAttribute("aria-hidden", "false");
+
+        document.body.style.overflow = "hidden";
+
+    }
+
+
+    if(e.target.id === "lightbox" || e.target.id === "lightbox-image"){
+
+        closeLightbox();
+
+    }
+
+});
 
     if(e.target.id === "prev-button"){
 
@@ -974,6 +1111,20 @@ document.addEventListener("click", function(e){
 
 document.addEventListener("keydown", function(e){
 
+if(e.key === "Escape"){
+
+    closeLightbox();
+
+    return;
+
+}
+
+if(document.getElementById("lightbox").classList.contains("is-open")){
+
+    return;
+
+}
+    
     if(e.key === "ArrowLeft"){
 
         if(currentIndex > 0){
