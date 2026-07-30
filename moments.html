@@ -729,6 +729,16 @@ function renderMoment(){
 
 let moment = moments[currentIndex];
 
+
+let prevButton = currentIndex > 0
+? '<button id="prev-button">‹</button>'
+: '<span></span>';
+
+let nextButton = currentIndex < moments.length - 1
+? '<button id="next-button">›</button>'
+: '<span></span>';
+
+
 let mediaHTML = "";
 
 if (moment.type === "image") {
@@ -765,9 +775,9 @@ document.getElementById("moment-display").innerHTML = `
 
 <div class="moment-control">
 
-<button id="prev-button">‹</button>
+${prevButton}
 
-<button id="next-button">›</button>
+${nextButton}
 
 </div>
 
