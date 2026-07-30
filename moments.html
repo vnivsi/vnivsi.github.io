@@ -772,7 +772,8 @@ if(moment.type === "video"){
     // 本地视频 / 直接 mp4 外链
     if(
         moment.platform === "local" ||
-        moment.platform === "url"
+        moment.platform === "url" ||
+        moment.platform === "direct"
     ){
 
         mediaHTML = `
