@@ -972,6 +972,36 @@ document.addEventListener("click", function(e){
 });
 
 
+document.addEventListener("keydown", function(e){
+
+    if(e.key === "ArrowLeft"){
+
+        if(currentIndex > 0){
+
+            currentIndex--;
+
+            renderMoment();
+
+        }
+
+    }
+
+
+    if(e.key === "ArrowRight"){
+
+        if(currentIndex < moments.length - 1){
+
+            currentIndex++;
+
+            renderMoment();
+
+        }
+
+    }
+
+});
+
+    
 renderMoment();
 
 
