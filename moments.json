@@ -29,5 +29,22 @@
     "title": "",
     "type": "image",
     "src": "assets/moments/0004.webp"
-  }
+  },
+
+  {
+    "id": "005",
+    "date": "2026-07-31",
+    "title": "",
+    "type": "video",
+    "src": "assets/moments/0001.mp4"
+},
+
+  {
+    "id": "006",
+    "date": "2026-07-31",
+    "title": "",
+    "type": "video",
+    "src": "assets/moments/0002.mp4"
+},
+
 ]
