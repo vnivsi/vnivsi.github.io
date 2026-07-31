@@ -1216,7 +1216,7 @@ ${moment.date}${moment.title ? " · " + moment.title : ""} · ${pageNumber}
 
 function changeMoment(direction){
 
-    const media = document.querySelector(".moment-media");
+    const media = document.querySelector("#moment-stage .moment-media");
 
     if(media){
 
@@ -1262,12 +1262,6 @@ renderMoment();
 const newPage = stage.firstElementChild;
 
 if(newPage){
-
-    const newMedia = newPage.querySelector(".moment-media");
-
-    if(newMedia){
-        newMedia.style.display = "block";
-    }
 
     newPage.classList.add(
         direction === "next"
