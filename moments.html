@@ -388,6 +388,7 @@ body {
 #moment-stage {
     position:relative;
     overflow:hidden;
+    min-height:500px;
 }
     
 .slide-out-left {
@@ -1258,30 +1259,19 @@ setTimeout(()=>{
 
     renderMoment();
 
-    const newPage = stage.firstElementChild;
-
-    if(newPage){
-
-        const img = newPage.querySelector(".moment-media");
-
-        if(img){
-
-            img.onload = ()=>{
-
-                stage.style.height = img.offsetHeight + "px";
-
-            };
-
-        }
+const newPage = stage.firstElementChild;
 
 
-        newPage.classList.add(
-            direction === "next"
-            ? "slide-in-right"
-            : "slide-in-left"
-        );
+if(newPage){
 
-    }
+    newPage.classList.add(
+        direction === "next"
+        ? "slide-in-right"
+        : "slide-in-left"
+    );
+
+}
+
 
 },300);
 
