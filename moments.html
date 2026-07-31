@@ -374,6 +374,87 @@ body {
 }
 
 
+.moment-page {
+    width:100%;
+    animation-duration:0.35s;
+    animation-fill-mode:both;
+}
+
+.slide-out-left {
+    animation-name: slideOutLeft;
+}
+
+.slide-out-right {
+    animation-name: slideOutRight;
+}
+
+.slide-in-left {
+    animation-name: slideInLeft;
+}
+
+.slide-in-right {
+    animation-name: slideInRight;
+}
+
+@keyframes slideOutLeft {
+
+    from{
+        transform:translateX(0);
+        opacity:1;
+    }
+
+    to{
+        transform:translateX(-80px);
+        opacity:0;
+    }
+
+}
+
+
+@keyframes slideOutRight {
+
+    from{
+        transform:translateX(0);
+        opacity:1;
+    }
+
+    to{
+        transform:translateX(80px);
+        opacity:0;
+    }
+
+}
+
+
+@keyframes slideInLeft {
+
+    from{
+        transform:translateX(-80px);
+        opacity:0;
+    }
+
+    to{
+        transform:translateX(0);
+        opacity:1;
+    }
+
+}
+
+
+@keyframes slideInRight {
+
+    from{
+        transform:translateX(80px);
+        opacity:0;
+    }
+
+    to{
+        transform:translateX(0);
+        opacity:1;
+    }
+
+}
+    
 @keyframes momentFade {
 
     from {
@@ -1090,7 +1171,10 @@ if(moment.type === "video"){
 }
 
 
-document.getElementById("moment-display").innerHTML = `
+document.getElementById("moment-stage").innerHTML = `
+
+
+<div class="moment-page">
 
 
 <div class="moment-control">
@@ -1106,7 +1190,12 @@ ${mediaHTML}
 
 
 <div class="moment-info">
+
 ${moment.date}${moment.title ? " · " + moment.title : ""} · ${pageNumber}
+
+</div>
+
+
 </div>
 
 
@@ -1132,6 +1221,8 @@ function changeMoment(direction){
 
 
     setTimeout(()=>{
+        const oldStage = document.getElementById("moment-stage");
+        const oldContent = oldStage.innerHTML;
 
         if(direction === "next"){
             currentIndex++;
@@ -1141,11 +1232,21 @@ function changeMoment(direction){
             currentIndex--;
         }
 
+const stage = document.getElementById("moment-stage");
 
+const oldElement = stage.firstElementChild;
+
+if(oldElement){
+    oldElement.classList.add(
+        direction === "next"
+        ? "slide-out-left"
+        : "slide-out-right"
+    );
+}
+        
         renderMoment();
-
-
         const newMedia = document.querySelector(".moment-media");
+
 
 
         if(newMedia){
