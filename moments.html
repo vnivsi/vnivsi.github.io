@@ -387,6 +387,61 @@ body {
     }
 
 }
+.moment-slide {
+    transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+
+.slide-out-left {
+    transform: translateX(-40px);
+    opacity:0;
+}
+
+
+.slide-out-right {
+    transform: translateX(40px);
+    opacity:0;
+}
+
+
+.slide-in-left {
+    animation: slideInLeft 0.35s ease;
+}
+
+
+.slide-in-right {
+    animation: slideInRight 0.35s ease;
+}
+
+
+@keyframes slideInLeft {
+
+    from {
+        transform:translateX(-40px);
+        opacity:0;
+    }
+
+    to {
+        transform:translateX(0);
+        opacity:1;
+    }
+
+}
+
+
+@keyframes slideInRight {
+
+    from {
+        transform:translateX(40px);
+        opacity:0;
+    }
+
+    to {
+        transform:translateX(0);
+        opacity:1;
+    }
+
+}
 
 iframe.moment-media {
     aspect-ratio:16 / 9;
@@ -1058,6 +1113,57 @@ ${moment.date}${moment.title ? " · " + moment.title : ""} · ${pageNumber}
 
 }
 
+function changeMoment(direction){
+
+    const media = document.querySelector(".moment-media");
+
+    if(media){
+
+        if(direction === "next"){
+            media.classList.add("slide-out-left");
+        }
+
+        else if(direction === "prev"){
+            media.classList.add("slide-out-right");
+        }
+
+    }
+
+
+    setTimeout(()=>{
+
+        if(direction === "next"){
+            currentIndex++;
+        }
+
+        else if(direction === "prev"){
+            currentIndex--;
+        }
+
+
+        renderMoment();
+
+
+        const newMedia = document.querySelector(".moment-media");
+
+
+        if(newMedia){
+
+            if(direction === "next"){
+                newMedia.classList.add("slide-in-right");
+            }
+
+            else if(direction === "prev"){
+                newMedia.classList.add("slide-in-left");
+            }
+
+        }
+
+
+    },200);
+
+}
+    
 function closeLightbox(){
 
     const lightbox = document.getElementById("lightbox");
@@ -1101,9 +1207,7 @@ document.addEventListener("click", function(e){
 
         if(currentIndex > 0){
 
-            currentIndex--;
-
-            renderMoment();
+            changeMoment("prev");
 
         }
 
@@ -1114,9 +1218,7 @@ document.addEventListener("click", function(e){
 
         if(currentIndex < moments.length - 1){
 
-            currentIndex++;
-
-            renderMoment();
+            changeMoment("next");
 
         }
 
