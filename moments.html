@@ -388,7 +388,6 @@ body {
 #moment-stage {
     position:relative;
     overflow:hidden;
-    min-height:500px;
 }
     
 .slide-out-left {
@@ -1257,9 +1256,21 @@ if(oldElement){
         
 setTimeout(()=>{
 
-    renderMoment();
+renderMoment();
 
 const newPage = stage.firstElementChild;
+
+const media = newPage.querySelector(".moment-media");
+
+if(media){
+
+    media.onload = ()=>{
+
+        stage.style.height = media.offsetHeight + "px";
+
+    };
+
+}
 
 
 if(newPage){
