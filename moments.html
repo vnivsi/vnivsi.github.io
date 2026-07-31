@@ -1242,7 +1242,7 @@ function changeMoment(direction){
             currentIndex--;
         }
 
-const stage = document.getElementById("moment-stage");
+const stage = document.getElementById("moment-display");
 
 const oldElement = stage.firstElementChild;
 
@@ -1258,7 +1258,7 @@ setTimeout(()=>{
 
 renderMoment();
 
-const newPage = stage.firstElementChild;
+const newPage = stage.querySelector(".moment-page");
 
 if(newPage){
 
