@@ -1263,6 +1263,12 @@ const newPage = stage.firstElementChild;
 
 if(newPage){
 
+    const newMedia = newPage.querySelector(".moment-media");
+
+    if(newMedia){
+        newMedia.style.display = "block";
+    }
+
     newPage.classList.add(
         direction === "next"
         ? "slide-in-right"
