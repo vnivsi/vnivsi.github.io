@@ -1260,19 +1260,6 @@ renderMoment();
 
 const newPage = stage.firstElementChild;
 
-const media = newPage.querySelector(".moment-media");
-
-if(media){
-
-    media.onload = ()=>{
-
-        stage.style.height = media.offsetHeight + "px";
-
-    };
-
-}
-
-
 if(newPage){
 
     newPage.classList.add(
