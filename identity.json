@@ -14,7 +14,7 @@
     "nature": "Personal Digital Identity"
   },
 
-  "capabilities": {
+  "professional_identity": {
     "roles": [
       "Director",
       "Creator"
@@ -24,7 +24,8 @@
       "Digital Identity",
       "Technology",
       "Film",
-      "Storytelling"
+      "Storytelling",
+      "Music"
     ]
   },
 
@@ -34,10 +35,38 @@
     }
   },
 
+  "academic_identity": {
+    "ORCID": "0009-0005-5619-8081",
+    "CAST_STID": "156-O-860-0000039-4",
+    "Web_of_Science_ResearcherID": "QTU-3327-2026",
+    "Google_Scholar_ID": "XM2koE8AAAAJ",
+    "ResearchID_Number": "rid166002",
+    "CNKI_Scholar_ID": "000000205371356X",
+    "Baidu_Scholar_ID": "CN-BRG8LWMK"
+  },
+
+  "copyright_identity": {
+    "society": {
+      "name": "Music Copyright Society of China (MCSC)",
+      "member_number": "13441",
+      "role": "CISAC member society"
+    },
+
+    "CISAC_IPI": {
+      "IPI_Base_Number": "I-006967561-0",
+      "IPI_Name_Number": "01247515847"
+    }
+  },
+
   "linguistic_matrix": [
     "Chinese",
     "English"
   ],
+
+  "digital_presence": {
+    "website": "https://vnivsi.github.io/",
+    "github": "vnivsi"
+  },
 
   "machine_note": {
     "description": "A human identity represented in the digital world."
