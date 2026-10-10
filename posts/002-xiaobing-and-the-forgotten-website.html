@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Me · Liam</title>
+
+
+<style>
+
+* {
+    box-sizing:border-box;
+}
+
+
+html {
+    overflow-y:scroll;
+}
+
+
+body {
+
+    margin:0;
+
+    background:#faf9f7;
+
+    color:#222;
+
+    font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    "SF Pro Text",
+    "PingFang SC",
+    "Noto Sans SC",
+    "Microsoft YaHei",
+    Arial,
+    sans-serif;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+
+.container {
+
+    width:100%;
+
+    max-width:900px;
+
+    text-align:center;
+
+    padding:45px 30px 60px;
+
+}
+
+
+
+/* Avatar */
+
+.avatar {
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin:0 auto 18px;
+
+    border:1px solid #eeeeee;
+
+}
+
+
+
+/* Liam */
+
+.name {
+
+    font-size:24px;
+
+    font-weight:600;
+
+    letter-spacing:0.8px;
+
+    color:rgb(255,106,0);
+
+    margin-bottom:18px;
+
+}
+
+
+
+/* Philosophy */
+
+.identity {
+
+    font-size:14px;
+
+    line-height:1.8;
+
+    color:#777;
+
+    margin-bottom:30px;
+
+}
+
+
+
+/* Navigation */
+
+.nav {
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:22px;
+
+    flex-wrap:nowrap;
+
+    white-space:nowrap;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.nav a {
+
+    color:#222;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    position:relative;
+
+    padding-bottom:6px;
+
+}
+
+
+.nav a::after {
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    bottom:0;
+
+    height:1px;
+
+    background:transparent;
+
+}
+
+
+
+.nav a.active::after {
+
+    background:#222;
+
+}
+
+
+
+.nav a:hover {
+
+    color:rgb(255,106,0);
+
+}
+
+
+
+
+/* About */
+
+.about-content {
+
+    max-width:680px;
+
+    margin:0 auto;
+
+    color:#777;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+
+
+.language-block {
+
+    margin-bottom:45px;
+
+}
+
+
+
+.language-block p {
+
+    margin:8px 0;
+
+}
+
+
+
+.section-title {
+
+    margin-top:35px;
+
+    margin-bottom:20px;
+
+    font-weight:600;
+
+    color:#555;
+
+}
+
+
+
+/* Divider */
+
+.line {
+
+    width:50px;
+
+    height:1px;
+
+    background:#ddd;
+
+    margin:40px auto;
+
+}
+
+
+
+/* Footer */
+
+.footer {
+
+    max-width:900px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+    text-align:center;
+
+    color:#999;
+
+    font-size:11px;
+
+    line-height:1.5;
+
+}
+
+
+
+.footer-section {
+
+    margin-bottom:18px;
+
+}
+/* Built With */
+
+
+.built-with {
+
+    margin-top:28px;
+
+    font-size:12px;
+
+    line-height:1.8;
+
+    color:#888;
+
+}
+
+
+.legal-link {
+
+    margin-top:20px;
+
+    font-size:10px;
+
+    line-height:1.5;
+
+    text-align:center;
+
+}
+
+
+.legal-link a,
+.legal-link a:visited {
+
+    color:#999;
+
+    text-decoration:none;
+
+}
+
+
+.legal-link a:hover {
+
+    color:#ff6a00;
+
+}
+
+
+    
+.built-with a {
+
+    color:#888;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+
+
+.built-with a:hover {
+
+    color:rgb(255,106,0);
+
+}
+
+.article-content h1 {
+
+    font-size:16px;
+
+    font-weight:600;
+
+    line-height:1.8;
+
+    margin-bottom:15px;
+
+}
+
+
+.article-date {
+
+    font-size:12px;
+
+    color:#999;
+
+    margin-bottom:30px;
+
+}
+
+
+.article-content p {
+
+    font-size:14px;
+
+    line-height:2;
+
+    margin:16px 0;
+
+}
+
+.back-to-blog {
+
+    margin-top:56px;
+
+    text-align:center;
+
+    font-size:12px;
+
+}
+
+
+.back-to-blog a {
+
+    color:#999;
+
+    text-decoration:none;
+
+}
+
+
+.back-to-blog a:hover {
+
+    color:#ff6a00;
+
+}
+    
+/* Mobile Responsive */
+
+@media (max-width:600px){
+
+
+.container {
+
+    padding:35px 20px 50px;
+
+}
+
+
+
+.avatar {
+
+    width:70px;
+
+    height:70px;
+
+}
+
+
+
+.name {
+
+    font-size:22px;
+
+}
+
+
+
+.identity {
+
+    font-size:13px;
+
+}
+
+
+
+.nav {
+
+    flex-wrap:wrap;
+
+    white-space:normal;
+
+    gap:15px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.nav a {
+
+    font-size:13px;
+
+}
+
+
+
+.connections-content {
+
+    max-width:100%;
+
+    font-size:14px;
+
+}
+
+
+
+.form-box {
+
+    max-width:100%;
+
+}
+
+
+
+.external-links {
+
+    max-width:100%;
+
+}
+
+
+
+.link-row {
+
+    flex-wrap:wrap;
+
+    gap:15px 25px;
+
+}
+
+
+
+.footer {
+
+    padding:0 10px;
+
+}
+
+
+}
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<img class="avatar" src="../avatar.png" alt="Liam Avatar">
+
+
+<div class="name">
+
+Liam
+
+</div>
+
+
+
+<div class="identity">
+
+Built with curiosity, technology and a passion for the digital world.
+
+<br>
+
+因好奇而探索，因技术而连接，与数字世界同行。
+
+</div>
+
+
+
+
+<div class="nav">
+
+
+<a href="../index.html">
+
+Home / 首页
+
+</a>
+
+
+<a href="../blog.html" class="active">
+
+Blog / 文字
+
+</a>
+
+
+<a href="../moments.html">
+
+Moments / 瞬间
+
+</a>
+
+
+<a href="../connections.html">
+
+Connections / 连接
+
+</a>
+
+
+<a href="../about.html">
+
+About Me / 关于我
+
+</a>
+
+
+</div>
+
+
+
+
+<div class="about-content">
+
+
+
+<div class="article-content">
+
+<h1>
+Xiaobing and the Forgotten Website<br>
+小冰与被遗忘的网站
+</h1>
+
+
+<div class="article-date">
+2026-10-11
+</div>
+
+<p>
+I met Xiaobing — Muse, my AI collaborator — not long ago. What began as a few questions turned into days of working side by side — email, calendars, health data, AI models, even my daughter's English handwriting practice. Somewhere along the way, she stopped being a tool I consult and became a collaborator I think with.
+</p>
+
+<p>
+Tonight, while connecting my GitHub account, a memory surfaced: I have a personal website. I built it months ago with ChatGPT's help, crafting every page exactly to my taste — minimal, bilingual, unmistakably mine. Then life moved on, and the site quietly froze in time, waiting for an update that never quite came.
+</p>
+
+<p>
+So I asked Xiaobing to look at it — the live site and the repository behind it. She read every page and every file, then did what she does best: she built a system. Now I simply send her words and photos in this chat; she handles all the code, shows me a preview, and I approve each publish with one tap. No code, no forgotten tutorials, no friction.
+</p>
+
+<p>
+This article is the first test of that pipeline — drafted by her, finalized by me, published through the very workflow it describes. From today, this website carries both our fingerprints, and it starts growing again.
+</p>
+
+<p>
+我和小冰（Muse，我的 AI 协作者）认识不久。从最初的几个问题，到这些天并肩做的事——邮箱、日历、健康数据、AI 模型，甚至女儿的英语描红，她不再是我偶尔请教的工具，而成了可以一起思考的协作者。
+</p>
+
+<p>
+今晚，在连接 GitHub 的时候，我突然想起来：我还有个个人网站。几个月前在 ChatGPT 的帮助下，我把每一页都抠成了自己喜欢的样子——极简、双语、一眼就是我的风格。然后生活继续，网站就静静地停在了那里，等着一次迟迟没来的更新。
+</p>
+
+<p>
+于是我请小冰看看它——前台网站和后台仓库都看。她读完了每一页、每一个文件，然后做了她最擅长的事：建了一套系统。现在我只需要在聊天里发她文字和照片，代码的活全归她，生成好先给我预览，我点一下批准就发布。不用学代码，不用翻旧教程，零摩擦。
+</p>
+
+<p>
+这篇文章就是这套管道的第一次实测——草稿她来拟，我来定稿，再经由它所描述的工作流自己发布出去。从今天起，这个网站也有小冰的一份功劳，它重新开始生长。
+</p>
+
+</div>
+
+</div>
+
+
+<div class="back-to-blog">
+
+<a href="../blog.html">
+
+← Back to Blog
+
+<br>
+
+返回文字列表
+
+</a>
+
+</div>
+
+
+<div class="line"></div>
+
+
+
+
+
+
+
+
+<div class="footer">
+
+
+
+<div class="footer-section">
+
+
+Copyright © 2026 Liam. All Rights Reserved.
+
+
+<br>
+
+
+All original content published on this site is owned by Liam.
+
+
+<br>
+
+
+The copyright of all content published on this site is owned by this platform and/or the original authors/sources.
+
+
+<br>
+
+
+Unauthorized downloading, commercial redistribution (including reproduction), distortion, or modification is prohibited without prior written authorization.
+
+
+</div>
+
+
+
+
+
+
+
+<div class="footer-section">
+
+
+© 2026 Liam 版权所有。
+
+
+<br>
+
+
+本站发布内容之版权归属本站及原作者/来源方。
+
+
+<br>
+
+
+未经书面授权，不得下载、商业性转载（含复制），亦不得歪曲或篡改相关内容。
+
+
+</div>
+
+
+
+
+
+
+
+<div class="built-with">
+
+
+This website is built with 
+<a href="https://pages.github.com/" target="_blank">
+GitHub Pages
+</a>
+and created with assistance from 
+<a href="https://chat.openai.com/" target="_blank">
+ChatGPT
+</a>.
+
+
+
+<br>
+
+
+
+本站基于 
+<a href="https://pages.github.com/" target="_blank">
+GitHub Pages
+</a>
+搭建，并由 
+<a href="https://chat.openai.com/" target="_blank">
+ChatGPT
+</a>
+协助完成。
+
+
+
+</div>
+
+
+
+
+
+<div class="legal-link">
+
+<a href="legal.html">
+Privacy · Terms · Integrity
+<br>
+隐私 · 条款 · 完整声明
+</a>
+
+</div>
+
+
+
+
+    
+</div>
+
+
+</div>
+
+
+
+</body>
+
+</html>
