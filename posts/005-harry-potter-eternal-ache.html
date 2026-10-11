@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>28 Years Gone — Harry Potter's Eternal Ache · Liam</title>
+
+
+<style>
+
+* {
+    box-sizing:border-box;
+}
+
+
+html {
+    overflow-y:scroll;
+}
+
+
+body {
+
+    margin:0;
+
+    background:#faf9f7;
+
+    color:#222;
+
+    font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    "SF Pro Text",
+    "PingFang SC",
+    "Noto Sans SC",
+    "Microsoft YaHei",
+    Arial,
+    sans-serif;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+
+.container {
+
+    width:100%;
+
+    max-width:900px;
+
+    text-align:center;
+
+    padding:45px 30px 60px;
+
+}
+
+
+
+/* Avatar */
+
+.avatar {
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin:0 auto 18px;
+
+    border:1px solid #eeeeee;
+
+}
+
+
+
+/* Liam */
+
+.name {
+
+    font-size:24px;
+
+    font-weight:600;
+
+    letter-spacing:0.8px;
+
+    color:rgb(255,106,0);
+
+    margin-bottom:18px;
+
+}
+
+
+
+/* Philosophy */
+
+.identity {
+
+    font-size:14px;
+
+    line-height:1.8;
+
+    color:#777;
+
+    margin-bottom:30px;
+
+}
+
+
+
+/* Navigation */
+
+.nav {
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:22px;
+
+    flex-wrap:nowrap;
+
+    white-space:nowrap;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.nav a {
+
+    color:#222;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    position:relative;
+
+    padding-bottom:6px;
+
+}
+
+
+.nav a::after {
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    bottom:0;
+
+    height:1px;
+
+    background:transparent;
+
+}
+
+
+
+.nav a.active::after {
+
+    background:#222;
+
+}
+
+
+
+.nav a:hover {
+
+    color:rgb(255,106,0);
+
+}
+
+
+
+
+/* About */
+
+.about-content {
+
+    max-width:680px;
+
+    margin:0 auto;
+
+    color:#777;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+
+
+.language-block {
+
+    margin-bottom:45px;
+
+}
+
+
+
+.language-block p {
+
+    margin:8px 0;
+
+}
+
+
+
+.section-title {
+
+    margin-top:35px;
+
+    margin-bottom:20px;
+
+    font-weight:600;
+
+    color:#555;
+
+}
+
+
+
+/* Divider */
+
+.line {
+
+    width:50px;
+
+    height:1px;
+
+    background:#ddd;
+
+    margin:40px auto;
+
+}
+
+
+
+/* Footer */
+
+.footer {
+
+    max-width:900px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+    text-align:center;
+
+    color:#999;
+
+    font-size:11px;
+
+    line-height:1.5;
+
+}
+
+
+
+.footer-section {
+
+    margin-bottom:18px;
+
+}
+/* Built With */
+
+
+.built-with {
+
+    margin-top:28px;
+
+    font-size:12px;
+
+    line-height:1.8;
+
+    color:#888;
+
+}
+
+
+.legal-link {
+
+    margin-top:20px;
+
+    font-size:10px;
+
+    line-height:1.5;
+
+    text-align:center;
+
+}
+
+
+.legal-link a,
+.legal-link a:visited {
+
+    color:#999;
+
+    text-decoration:none;
+
+}
+
+
+.legal-link a:hover {
+
+    color:#ff6a00;
+
+}
+
+
+    
+.built-with a {
+
+    color:#888;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+
+
+.built-with a:hover {
+
+    color:rgb(255,106,0);
+
+}
+
+.article-content h1 {
+
+    font-size:16px;
+
+    font-weight:600;
+
+    line-height:1.8;
+
+    margin-bottom:15px;
+
+}
+
+
+.article-date {
+
+    font-size:12px;
+
+    color:#999;
+
+    margin-bottom:30px;
+
+}
+
+
+.article-content img {
+
+    max-width:100%;
+
+    height:auto;
+
+    display:block;
+
+    margin:24px auto;
+
+}
+
+
+.article-content p {
+
+    font-size:14px;
+
+    line-height:2;
+
+    margin:16px 0;
+
+}
+
+.back-to-blog {
+
+    margin-top:56px;
+
+    text-align:center;
+
+    font-size:12px;
+
+}
+
+
+.back-to-blog a {
+
+    color:#999;
+
+    text-decoration:none;
+
+}
+
+
+.back-to-blog a:hover {
+
+    color:#ff6a00;
+
+}
+    
+/* Mobile Responsive */
+
+@media (max-width:600px){
+
+
+.container {
+
+    padding:35px 20px 50px;
+
+}
+
+
+
+.avatar {
+
+    width:70px;
+
+    height:70px;
+
+}
+
+
+
+.name {
+
+    font-size:22px;
+
+}
+
+
+
+.identity {
+
+    font-size:13px;
+
+}
+
+
+
+.nav {
+
+    flex-wrap:wrap;
+
+    white-space:normal;
+
+    gap:15px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.nav a {
+
+    font-size:13px;
+
+}
+
+
+
+.connections-content {
+
+    max-width:100%;
+
+    font-size:14px;
+
+}
+
+
+
+.form-box {
+
+    max-width:100%;
+
+}
+
+
+
+.external-links {
+
+    max-width:100%;
+
+}
+
+
+
+.link-row {
+
+    flex-wrap:wrap;
+
+    gap:15px 25px;
+
+}
+
+
+
+.footer {
+
+    padding:0 10px;
+
+}
+
+
+}
+
+/* Visual memorial article */
+.visual-intro{background:#fff;border-left:4px solid #ff6a00;padding:16px 20px;margin:0 0 36px;border-radius:0 8px 8px 0;font-size:15px;text-align:left;line-height:1.9}
+.article-content figure{margin:0 0 8px;padding:0}
+.article-content figure img{display:block;margin:0 auto;max-width:100%;height:auto;border-radius:6px}
+.article-content figcaption{font-size:15px;color:#555;margin:10px auto 30px;max-width:640px;line-height:1.9;text-align:left}
+.article-content figcaption.textcap{border-bottom:1px solid #eee;padding-bottom:26px}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<img class="avatar" src="../avatar.png" alt="Liam Avatar">
+
+
+<div class="name">
+
+Liam
+
+</div>
+
+
+
+<div class="identity">
+
+Built with curiosity, technology and a passion for the digital world.
+
+<br>
+
+因好奇而探索，因技术而连接，与数字世界同行。
+
+</div>
+
+
+
+
+<div class="nav">
+
+
+<a href="../index.html">
+
+Home / 首页
+
+</a>
+
+
+<a href="../blog.html" class="active">
+
+Blog / 文字
+
+</a>
+
+
+<a href="../moments.html">
+
+Moments / 瞬间
+
+</a>
+
+
+<a href="../connections.html">
+
+Connections / 连接
+
+</a>
+
+
+<a href="../about.html">
+
+About Me / 关于我
+
+</a>
+
+
+</div>
+
+
+
+
+<div class="about-content">
+
+
+
+<div class="article-content">
+<h1>
+28 Years Gone — Harry Potter's Eternal Ache<br>
+逝世28年，《哈利·波特》永远的痛。
+</h1>
+
+
+<div class="article-date">
+2026-10-11
+</div>
+
+<div class="visual-intro">
+A visual memorial for Severus Snape — told the way it was first written: in pictures. The Chinese text lives inside the images, exactly as the author laid it out; an English translation follows each passage.<br><br>这是一篇图文纪念。中文已融在图中，保持原文排版；每段图文下方附英文译文。
+</div>
+
+<figure><img src="../assets/posts/005/u001.png" alt="Illustration 1" loading="lazy"><figcaption class="textcap">May 2, 1998 — a day every <i>Harry Potter</i> reader and moviegoer will remember for life. Hogwarts was razed to the ground; those we loved, forever parted.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u002.gif" alt="Voldemort and Harry’s wands connect — ‘2nd May 1998’" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u003.png" alt="Illustration 3" loading="lazy"><figcaption class="textcap">May 2, 2026 marks the 28th anniversary of the Battle of Hogwarts — and the 28th anniversary of Professor Snape’s passing.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u004.gif" alt="Snape in the shadows at Hogwarts" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u005.png" alt="Illustration 5" loading="lazy"><figcaption class="textcap">To this day, we may no longer believe in magic — but every time we think of Snape, our eyes still well up.<br><br>At first glance, I was certain he was the villain.<br><br>Deep eye bags, a large nose, center-parted long hair unwashed for what looked like a decade until it shone — and that black robe he wore through all eight films without ever changing.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u006.webp" alt="Snape standing in the Great Hall" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u007.png" alt="Illustration 7" loading="lazy"><figcaption class="textcap">One glance from him at Harry, and the scar seared with pain — a chill down the spine.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u008.gif" alt="Harry clutching his scar — ‘Nothing, I’m fine’" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u009.png" alt="Illustration 9" loading="lazy"><figcaption class="textcap">He was menacing, hounding Harry and Ron at every turn, giving no quarter.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u010.gif" alt="Snape glaring — ‘You’d be on the train home tonight’" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u011.png" alt="Illustration 11" loading="lazy"><figcaption class="textcap">Cruel and ungenerous — Neville’s greatest fear was Snape himself.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u012.gif" alt="Snape sweeping through a doorway" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u013.png" alt="Illustration 13" loading="lazy"><figcaption class="textcap">He had been a Death Eater, notorious and reviled.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u014.webp" alt="Voldemort and the Death Eaters at the table" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u015.png" alt="Illustration 15" loading="lazy"><figcaption class="textcap">He cursed Harry’s dead father to his face: arrogant, weak — nothing but a pig.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u016.webp" alt="Snape confronting Harry — ‘Your father was a swine’" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u017.png" alt="Illustration 17" loading="lazy"><figcaption class="textcap">It was he who killed Dumbledore with his own hand!</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u018.gif" alt="Dumbledore falling from the tower" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u019.png" alt="Illustration 19" loading="lazy"><figcaption class="textcap">After every evil deed, every betrayal, he ascended to Headmaster as if it were only natural.<br><br>When Harry roared, “What right have you to stand where Dumbledore stood?”<br><br>When Professor McGonagall drove him out, the whole school cheered — deeply, darkly satisfying.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u020.webp" alt="Harry confronting Snape — ‘How dare you stand where he stood’" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u021.png" alt="Illustration 21" loading="lazy"><figcaption class="textcap">But looking back on these moments now, we are in tears.<br><br>Harry loved to tattle to Dumbledore: “Snape — he—”<br>“Harry, not Snape. <i>Professor</i> Snape.” Every time, Dumbledore solemnly corrected him.<br><br>Because only Dumbledore knew the truth.<br><br>Snape was indeed a “villain” — he bore a lifetime of infamy, willingly making the world his enemy. For what?<br><br>On Harry’s first day at school, everyone stared at the scar on his forehead. Only Snape stared into his eyes.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u022.gif" alt="Snape and Quirrell facing each other" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u023.png" alt="Illustration 23" loading="lazy"><figcaption class="textcap">From the first glance, to every glance after.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u024.gif" alt="Snape deep in thought" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u025.png" alt="Illustration 25" loading="lazy"><figcaption class="textcap">Only because Harry had his mother Lily’s eyes.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u026.gif" alt="Young Harry" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u027.png" alt="Illustration 27" loading="lazy"><figcaption class="textcap">Across all eight <i>Harry Potter</i> films, Snape cursed Harry’s father in every single one — yet never breathed a word about Harry’s mother, Lily.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u028.png" alt="Illustration 28" loading="lazy"><figcaption class="textcap">Their first meeting: beneath a tree in a valley.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u029.webp" alt="Young Lily in the valley" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u030.png" alt="Illustration 30" loading="lazy"><figcaption class="textcap">A little witch called a freak met a lonely, odd little wizard.<br><br>Daisies bloomed in her palm, flutterby bushes flowered in the wind, and he gazed into those green eyes:<br>“I’m just like you. Don’t be afraid.”</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u031.gif" alt="The Sorting Hat on young Snape" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u032.png" alt="Illustration 32" loading="lazy"><figcaption class="textcap">At school, beneath the Sorting Hat — she went to Gryffindor, he to Slytherin.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u033.gif" alt="James Potter bullying Snape — ‘Snivellus’" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u034.png" alt="Illustration 34" loading="lazy"><figcaption class="textcap">The boy’s world held only those eyes — but those eyes would no longer linger on him for even a second.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u035.webp" alt="The lone tree in the valley" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u036.png" alt="Illustration 36" loading="lazy"><figcaption class="textcap">They ganged up to bully the boy, stripping his trousers off in front of the girl.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u037.gif" alt="Lily and young Snape in a corridor" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u038.png" alt="Illustration 38" loading="lazy"><figcaption class="textcap">He could never forget the ringleader’s name — James Potter. Yet the girl fell for that scoundrel.<br><br>He grew darker, obsessed with the Dark Arts, became a Death Eater. The girl cut him off.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u039.webp" alt="Young Snape cornered" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u040.png" alt="Illustration 40" loading="lazy"><figcaption class="textcap">After graduation, the girl married James and had Harry. He stayed at the school — and never loved anyone again.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u041.png" alt="Illustration 41" loading="lazy"><figcaption class="textcap">— and never loved anyone again.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u042.gif" alt="Snape and Dumbledore on the hilltop" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u043.png" alt="Illustration 43" loading="lazy"><figcaption class="textcap">To love without ever having, to grow old alone. Learning the Dark Lord meant to kill Lily, he risked death to pass word, begging desperately. Dumbledore asked, “What will you give in exchange for her safety?” His voice trembling: “Anything.”</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u044.gif" alt="Snape in profile" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u045.png" alt="Illustration 45" loading="lazy"><figcaption class="textcap">Lily died anyway.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u046.gif" alt="Dark silhouette" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u047.png" alt="Illustration 47" loading="lazy"><figcaption class="textcap">That night, he held the girl for the first time — the only time, the last time.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u048.gif" alt="Snape’s anguished face" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u049.png" alt="Illustration 49" loading="lazy"><figcaption class="textcap">Those luminous green eyes, like fallen evening stars, burned through his black robe — a great hole, heart-rending.<br><br>He hated Harry’s father — for his arrogance, for trusting the traitor who gave away the address, for causing Lily’s death.<br><br>He targeted Neville — both boys born in July; had Voldemort chosen Neville, his Lily would not have died.<br><br>His eyes held only Lily. But love, in itself, is selfish.<br><br>Lily guarded Harry’s life with love; he resolved to guard Lily’s only love with his life.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u050.gif" alt="Snape holding Lily’s body, baby Harry in the crib" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u051.png" alt="Illustration 51" loading="lazy"><figcaption class="textcap">With the enemy at the gates, Dumbledore said, “Snape, you must kill me before Voldemort will trust you completely.”</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u052.webp" alt="Snape in his office — ‘He has her eyes’" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u053.png" alt="Illustration 53" loading="lazy"><figcaption class="textcap">That “please” was not begging Snape for mercy — it was an order.<br>That “Please” did not mean “spare me.” It meant “kill me.”</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u054.gif" alt="Dumbledore in his office" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u055.png" alt="Illustration 55" loading="lazy"><figcaption class="textcap">He gritted his teeth and obeyed: condemned by thousands, forsaken by all — every crime his alone to bear.<br><br>When McGonagall drove him from the school, people saw only his disgrace — not how he deflected his curses onto the Death Eaters behind him.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u056.gif" alt="Dumbledore — ‘Please’" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u057.png" alt="Illustration 57" loading="lazy"><figcaption class="textcap">His last glance at Hogwarts swept the crowd, searching for Harry’s green eyes.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u058.webp" alt="McGonagall dueling Snape in the Great Hall" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u059.png" alt="Illustration 59" loading="lazy"><figcaption class="textcap">His first glance at Hogwarts had swept a crowd, searching for Lily’s green eyes.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u060.webp" alt="Dumbledore — ‘You must be the one to kill me, Severus’" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u061.png" alt="Illustration 61" loading="lazy"><figcaption class="textcap">Snape spent his life searching — though he had long known the answer. The great serpent Nagini tore at his broken body, five bites, blood spraying an entire wall, and with his last breath he pleaded: “Look at me.”</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u062.gif" alt="Snape searching the crowd" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u063.png" alt="Illustration 63" loading="lazy"><figcaption class="textcap">“You have your mother’s eyes” — unwavering, unto death.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u064.webp" alt="Illustration 64" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u065.png" alt="Illustration 65" loading="lazy"><figcaption class="textcap">Only after he was gone did we learn the most heartbreaking truth: Snape’s Patronus, like Lily’s, was a doe.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u066.gif" alt="Snape casting Expecto Patronum — the doe" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u067.png" alt="Illustration 67" loading="lazy"><figcaption class="textcap">Why not a stag?<br><br>He and Lily were never meant to love — yet he still remembered the blossom in her palm, still remembered: “I’m just like you. Don’t be afraid.”</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u068.webp" alt="Harry looking down" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u069.png" alt="Illustration 69" loading="lazy"><figcaption class="textcap">The only happiness of his life had to do with her.<br>“Always” — light as a sigh.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u070.gif" alt="Snape dying — ‘You have your mother’s eyes’" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u071.png" alt="Illustration 71" loading="lazy"><figcaption class="textcap">Twenty-eight years. Your Lily finally heard it.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u072.gif" alt="Lily’s magical image" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u073.png" alt="Illustration 73" loading="lazy"><figcaption class="textcap">At the story’s beginning, at Hogwarts, Harry first asked of Professor Snape: “Who is he?”<br><br>At the story’s end, at Platform 9¾, Harry spoke of Professor Snape for the last time: “He was the bravest man I ever knew.”</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u074.webp" alt="Young Lily and Snape lying in the grass" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u075.png" alt="Adult Harry — ‘He was the bravest man I ever knew’" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u076.png" alt="Illustration 76" loading="lazy"><figcaption class="textcap">Yet this man we could keep neither on screen nor off.<br><br>On January 14, 2016, Alan Rickman — who played Professor Snape — died of cancer. He was 69.<br><br>Alan’s life made Snape — but was far more than Snape.<br><br>Out of the robes, he was mature and refined, twice named among the 100 sexiest film stars in history.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u077.gif" alt="Harry asking Percy — ‘Who’s that teacher talking to Quirrell’" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u078.png" alt="Illustration 78" loading="lazy"><figcaption class="textcap">Those deep dark eyes — the stars we shall follow forever.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u079.webp" alt="Lily’s portrait" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u080.png" alt="Illustration 80" loading="lazy"><figcaption class="textcap">A late bloomer, Alan first appeared on the silver screen at 41, playing the ultimate villain in <i>Die Hard</i> — wickedly charming with an edge of steel.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u081.webp" alt="Alan Rickman portrait" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u082.png" alt="Illustration 82" loading="lazy"><figcaption class="textcap">In <i>Love Actually</i>, the must-watch every Christmas, he was the utterly charming English gentleman.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u083.webp" alt="Alan Rickman in Die Hard" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u084.png" alt="Illustration 84" loading="lazy"><figcaption class="textcap">In <i>Sense and Sensibility</i>, he was the restrained, tender Colonel Brandon.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u085.webp" alt="Alan Rickman in Love Actually" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u086.png" alt="Illustration 86" loading="lazy"><figcaption class="textcap">In <i>Dogma</i>, he was the deadpan angel flipping the bird.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u087.webp" alt="Alan Rickman as Colonel Brandon" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u088.png" alt="Illustration 88" loading="lazy"><figcaption class="textcap">In <i>Galaxy Quest</i>, Alan transformed into an adorable alien.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u089.gif" alt="Alan Rickman as the angel in Dogma" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u090.png" alt="Illustration 90" loading="lazy"><figcaption class="textcap">We remember Snape — how could we forget Alan?<br><br>Across the eight <i>Harry Potter</i> films, a full ten years, we all became Horcruxes bearing witness to parting and death.<br><br>Not long ago, an Italian girl, after watching <i>Deathly Hallows Part 2</i>, thanked Rowling for persuading Alan Rickman to take the role all those years ago — giving us the perfect Snape.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u091.webp" alt="J.K. Rowling’s tweet about Snape" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u092.png" alt="Illustration 92" loading="lazy"><figcaption class="textcap">What seemed a passing thought drew an answer from Rowling that brought tears to our eyes.<br><br>Snape made us say goodbye through tears; Alan left us with a smile.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u093.png" alt="Illustration 93" loading="lazy"><figcaption class="textcap">When filming began, <i>Harry Potter</i> wasn’t finished being written — Alan was the first to know that Snape loved Lily.<br><br>Whenever the director asked why he wouldn’t read his lines as written, he’d smirk: “I know things you don’t~”</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u094.jpg" alt="Alan Rickman (as Snape) laughing with Maggie Smith on set" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u095.png" alt="Illustration 95" loading="lazy"><figcaption class="textcap">The young actors were so into it they’d turn and run at the sight of Alan. But every day at visiting hours, Professor Snape in his black robes was mobbed by crowds of young fans, chatting and laughing together.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u096.webp" alt="Alan Rickman with young fans on set" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u097.png" alt="Illustration 97" loading="lazy"><figcaption class="textcap">Whenever Alan was filming, no one on set dared speak — yet someone spotted his secret: the white earphone cord of an iPod peeking from under his wig. But no one ever dared ask what he was listening to.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u098.webp" alt="Snape and Harry in Potions class (behind the scenes)" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u099.png" alt="Illustration 99" loading="lazy"><figcaption class="textcap">Voldemort with a nose turned out to be a glamorous diva, posing for the camera — while Snape rapped his bald head with the Elder Wand.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u100.gif" alt="Snape tapping Voldemort’s head with the Elder Wand (behind the scenes)" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u101.png" alt="Illustration 101" loading="lazy"><figcaption class="textcap">It’s strongly suspected Dumbledore moonlights as a warm-up DJ in the Muggle world, dancing anywhere anytime — Snape laughed so hard his bangs went crooked.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u102.gif" alt="Dumbledore and Snape laughing on set" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u103.png" alt="Illustration 103" loading="lazy"><figcaption class="textcap">In a tearjerker scene, Harry pressed on Snape’s wound — Snape’s neck tickled, and he laughed through take after take: “Stop it, I’m supposed to be dying here!”</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u104.gif" alt="Harry pressing on Snape’s wound (behind the scenes blooper)" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u105.png" alt="Illustration 105" loading="lazy"><figcaption class="textcap">Amid the laughter, it was as if they’d never left — in light and shadow, as if the story never ended.<br><br>Every May 2nd, J.K. Rowling apologizes to a character who died.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u106.png" alt="Illustration 106" loading="lazy"><figcaption class="textcap">Fred of the twins — he taught us: dare to challenge, fear nothing.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u107.webp" alt="Alan Rickman as the alien in Galaxy Quest" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u108.png" alt="Illustration 108" loading="lazy"><figcaption class="textcap">Dobby the house-elf — he taught us: seek freedom, protect your friends.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u109.webp" alt="Fred and George Weasley" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u110.png" alt="Illustration 110" loading="lazy"><figcaption class="textcap">Dumbledore — he taught us: it is not our abilities but our choices that shape our lives.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u111.webp" alt="Dobby — ‘Dobby has no master! Dobby is a free elf’" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u112.png" alt="Illustration 112" loading="lazy"><figcaption class="textcap">Professor Snape — he taught us: the world holds more than the good and the Death Eaters.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u113.webp" alt="Dumbledore wreathed in flame" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u114.png" alt="Illustration 114" loading="lazy"><figcaption class="textcap">Lupin and Tonks — they taught us: in the most beautiful love, death is never the end.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u115.gif" alt="Snape in profile" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u116.png" alt="Illustration 116" loading="lazy"><figcaption class="textcap">Sirius — he taught us: those who love us deeply never truly leave.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u117.webp" alt="Lupin and Tonks" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u118.png" alt="Illustration 118" loading="lazy"><figcaption class="textcap">Partings and deaths, the world changed — we are no longer those whimsical little Muggles, but the magic <i>Harry Potter</i> taught us lives on.</figcaption></figure>
+
+<figure><img src="../assets/posts/005/u119.gif" alt="Wands raised in tribute" loading="lazy"></figure>
+
+<figure><img src="../assets/posts/005/u120.png" alt="Illustration 120" loading="lazy"><figcaption class="textcap">Right here. Always here.<br>Always.</figcaption></figure>
+
+
+</div>
+
+</div>
+
+
+<div class="back-to-blog">
+
+<a href="../blog.html">
+
+← Back to Blog
+
+<br>
+
+返回文字列表
+
+</a>
+
+</div>
+
+
+<div class="line"></div>
+
+
+
+
+
+
+
+
+<div class="footer">
+
+
+
+<div class="footer-section">
+
+
+Copyright © 2026 Liam. All Rights Reserved.
+
+
+<br>
+
+
+All original content published on this site is owned by Liam.
+
+
+<br>
+
+
+The copyright of all content published on this site is owned by this platform and/or the original authors/sources.
+
+
+<br>
+
+
+Unauthorized downloading, commercial redistribution (including reproduction), distortion, or modification is prohibited without prior written authorization.
+
+
+</div>
+
+
+
+
+
+
+
+<div class="footer-section">
+
+
+© 2026 Liam 版权所有。
+
+
+<br>
+
+
+本站发布内容之版权归属本站及原作者/来源方。
+
+
+<br>
+
+
+未经书面授权，不得下载、商业性转载（含复制），亦不得歪曲或篡改相关内容。
+
+
+</div>
+
+
+
+
+
+
+
+<div class="built-with">
+
+
+This website is built on 
+<a href="https://pages.github.com/" target="_blank">
+GitHub Pages
+</a>,
+co-created with 
+<a href="https://chat.openai.com/" target="_blank">
+ChatGPT
+</a>,
+and evolving with
+<a href="https://muse.ai" target="_blank">
+Muse
+</a>.
+
+
+
+<br>
+
+
+
+本站基于 
+<a href="https://pages.github.com/" target="_blank">
+GitHub Pages
+</a>
+搭建，由
+<a href="https://chat.openai.com/" target="_blank">
+ChatGPT
+</a>
+协助代码创作，并由
+<a href="https://muse.ai" target="_blank">
+Muse
+</a>
+协助日常维护。
+
+
+
+</div>
+
+
+
+
+
+<div class="legal-link">
+
+<a href="legal.html">
+Privacy · Terms · Integrity
+<br>
+隐私 · 条款 · 完整声明
+</a>
+
+</div>
+
+
+
+
+    
+</div>
+
+
+</div>
+
+
+
+</body>
+
+</html>
