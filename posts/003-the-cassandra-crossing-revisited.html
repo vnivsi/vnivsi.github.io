@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Me · Liam</title>
+
+
+<style>
+
+* {
+    box-sizing:border-box;
+}
+
+
+html {
+    overflow-y:scroll;
+}
+
+
+body {
+
+    margin:0;
+
+    background:#faf9f7;
+
+    color:#222;
+
+    font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    "SF Pro Text",
+    "PingFang SC",
+    "Noto Sans SC",
+    "Microsoft YaHei",
+    Arial,
+    sans-serif;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+
+.container {
+
+    width:100%;
+
+    max-width:900px;
+
+    text-align:center;
+
+    padding:45px 30px 60px;
+
+}
+
+
+
+/* Avatar */
+
+.avatar {
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin:0 auto 18px;
+
+    border:1px solid #eeeeee;
+
+}
+
+
+
+/* Liam */
+
+.name {
+
+    font-size:24px;
+
+    font-weight:600;
+
+    letter-spacing:0.8px;
+
+    color:rgb(255,106,0);
+
+    margin-bottom:18px;
+
+}
+
+
+
+/* Philosophy */
+
+.identity {
+
+    font-size:14px;
+
+    line-height:1.8;
+
+    color:#777;
+
+    margin-bottom:30px;
+
+}
+
+
+
+/* Navigation */
+
+.nav {
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:22px;
+
+    flex-wrap:nowrap;
+
+    white-space:nowrap;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.nav a {
+
+    color:#222;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    position:relative;
+
+    padding-bottom:6px;
+
+}
+
+
+.nav a::after {
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    bottom:0;
+
+    height:1px;
+
+    background:transparent;
+
+}
+
+
+
+.nav a.active::after {
+
+    background:#222;
+
+}
+
+
+
+.nav a:hover {
+
+    color:rgb(255,106,0);
+
+}
+
+
+
+
+/* About */
+
+.about-content {
+
+    max-width:680px;
+
+    margin:0 auto;
+
+    color:#777;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+
+
+.language-block {
+
+    margin-bottom:45px;
+
+}
+
+
+
+.language-block p {
+
+    margin:8px 0;
+
+}
+
+
+
+.section-title {
+
+    margin-top:35px;
+
+    margin-bottom:20px;
+
+    font-weight:600;
+
+    color:#555;
+
+}
+
+
+
+/* Divider */
+
+.line {
+
+    width:50px;
+
+    height:1px;
+
+    background:#ddd;
+
+    margin:40px auto;
+
+}
+
+
+
+/* Footer */
+
+.footer {
+
+    max-width:900px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+    text-align:center;
+
+    color:#999;
+
+    font-size:11px;
+
+    line-height:1.5;
+
+}
+
+
+
+.footer-section {
+
+    margin-bottom:18px;
+
+}
+/* Built With */
+
+
+.built-with {
+
+    margin-top:28px;
+
+    font-size:12px;
+
+    line-height:1.8;
+
+    color:#888;
+
+}
+
+
+.legal-link {
+
+    margin-top:20px;
+
+    font-size:10px;
+
+    line-height:1.5;
+
+    text-align:center;
+
+}
+
+
+.legal-link a,
+.legal-link a:visited {
+
+    color:#999;
+
+    text-decoration:none;
+
+}
+
+
+.legal-link a:hover {
+
+    color:#ff6a00;
+
+}
+
+
+    
+.built-with a {
+
+    color:#888;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+
+
+.built-with a:hover {
+
+    color:rgb(255,106,0);
+
+}
+
+.article-content h1 {
+
+    font-size:16px;
+
+    font-weight:600;
+
+    line-height:1.8;
+
+    margin-bottom:15px;
+
+}
+
+
+.article-date {
+
+    font-size:12px;
+
+    color:#999;
+
+    margin-bottom:30px;
+
+}
+
+
+.article-content p {
+
+    font-size:14px;
+
+    line-height:2;
+
+    margin:16px 0;
+
+}
+
+.back-to-blog {
+
+    margin-top:56px;
+
+    text-align:center;
+
+    font-size:12px;
+
+}
+
+
+.back-to-blog a {
+
+    color:#999;
+
+    text-decoration:none;
+
+}
+
+
+.back-to-blog a:hover {
+
+    color:#ff6a00;
+
+}
+    
+/* Mobile Responsive */
+
+@media (max-width:600px){
+
+
+.container {
+
+    padding:35px 20px 50px;
+
+}
+
+
+
+.avatar {
+
+    width:70px;
+
+    height:70px;
+
+}
+
+
+
+.name {
+
+    font-size:22px;
+
+}
+
+
+
+.identity {
+
+    font-size:13px;
+
+}
+
+
+
+.nav {
+
+    flex-wrap:wrap;
+
+    white-space:normal;
+
+    gap:15px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.nav a {
+
+    font-size:13px;
+
+}
+
+
+
+.connections-content {
+
+    max-width:100%;
+
+    font-size:14px;
+
+}
+
+
+
+.form-box {
+
+    max-width:100%;
+
+}
+
+
+
+.external-links {
+
+    max-width:100%;
+
+}
+
+
+
+.link-row {
+
+    flex-wrap:wrap;
+
+    gap:15px 25px;
+
+}
+
+
+
+.footer {
+
+    padding:0 10px;
+
+}
+
+
+}
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<img class="avatar" src="../avatar.png" alt="Liam Avatar">
+
+
+<div class="name">
+
+Liam
+
+</div>
+
+
+
+<div class="identity">
+
+Built with curiosity, technology and a passion for the digital world.
+
+<br>
+
+因好奇而探索，因技术而连接，与数字世界同行。
+
+</div>
+
+
+
+
+<div class="nav">
+
+
+<a href="../index.html">
+
+Home / 首页
+
+</a>
+
+
+<a href="../blog.html" class="active">
+
+Blog / 文字
+
+</a>
+
+
+<a href="../moments.html">
+
+Moments / 瞬间
+
+</a>
+
+
+<a href="../connections.html">
+
+Connections / 连接
+
+</a>
+
+
+<a href="../about.html">
+
+About Me / 关于我
+
+</a>
+
+
+</div>
+
+
+
+
+<div class="about-content">
+
+
+
+<div class="article-content">
+
+<h1>
+The Cassandra Crossing, Revisited<br>
+再次赏析《卡桑德拉大桥》
+</h1>
+
+
+<div class="article-date">
+2026-10-11
+</div>
+
+<p>
+This article was originally published on my WeChat Official Account on May 20, 2022, and is reposted here.
+</p>
+
+<p>
+Original Title: The Cassandra Crossing<br>Chinese Title: 卡桑德拉大桥<br>Production: Carlton<br>Year: 1976<br>Premiere: December 18, 1976<br>MPAA Rating: R<br>IMDb Link: <a href="https://www.imdb.com/title/tt0074292/" target="_blank">http://www.imdb.com/title/tt0074292/</a><br>IMDb Rating: 5.9/10 (1,017 votes)<br>Countries: West Germany / Italy / UK<br>Genres: Drama / Thriller / Action<br>Director: George P. Cosmatos (乔治·科斯马图斯）
+</p>
+
+<p>
+<strong>Synopsis</strong>
+</p>
+
+<p>
+Two international terrorists break into the Geneva headquarters of the International Health Organization, intending to carry out an attack. Security guards fight back; one criminal is shot dead. During the pursuit, an officer accidentally shatters a vial of experimental virus, splashing it onto the other criminal. Both thugs are infected. One is captured on the spot and soon rots away and dies. The other flees onto a train bound for Stockholm — while the cheerful passengers aboard have no idea that bacteria could reach them at any moment.
+</p>
+
+<p>
+The virus spreads terrifyingly fast. Before long, many aboard the train are infected. To keep the virus from spreading further, the international police seize control of the train and order it rerouted toward the Cassandra Bridge — to be destroyed there…
+</p>
+
+<p>
+The train is forbidden to stop at any station, and panic erupts. A scientist aboard devises his own experimental method that cures many of the virus, but his superiors refuse to believe him. In the end he can only act on his own. The passengers clash with the bacteriological researchers; people take up arms. A young woman writer and her husband are caught in the crossfire. For the organization to take over the infected on the train, it must cross the Cassandra Bridge — a bridge that cannot bear the train's weight. Disaster strikes: the train derails, the bridge explodes, and bacteria spread through the air…
+</p>
+
+<p>
+A disaster film co-produced by the UK, Italy and West Germany, The Cassandra Crossing was made in 1976 and released in China in the early 1980s, with occasional TV reruns afterward — so its story is no stranger to Chinese audiences. This decades-old film has almost none of the computer wizardry today's Hollywood blockbusters rely on, yet it grips you all the same. Even more striking is the fearlessness in the face of the virus it conveys, and the compassion and humanism shown toward the patients. Its structure all but became the classic template for the disaster genre, influencing many films that followed.
+</p>
+
+<p>
+When the film premiered in China, audiences probably only recognized Sophia Loren, who played the heroine Jennifer. Looking back at the credits today, the cast is — without exaggeration — a luxury all-star lineup: besides Loren, the Italian national treasure, director George P. Cosmatos was also Italian, his Escape to Athena and First Blood fondly remembered by fans. Dr. Chamberlain, the male lead, was played by veteran British actor Richard Harris — best known to younger audiences as the white-bearded Headmaster Dumbledore in the first two Harry Potter films. Sadly, the old gentleman passed away in 2002, so let us revisit his prime through this film. Burt Lancaster, who played Colonel Mackenzie, was no less formidable — a double winner of the Oscar and the Golden Globe in 1960. The rest, Ava Gardner and Martin Sheen among them, were heavyweights of European and American cinema. And don't forget the Black star who played Father Haley — none other than the famous former American football giant O.J. Simpson.
+</p>
+
+<p>
+The stars' superb acting goes without saying, but the dubbing cast was an equally genuine all-star lineup, fully showcasing the Shanghai Film Dubbing Studio at its golden-age peak: Bi Ke as Chamberlain, Ding Jianhua as Jennifer, Fu Runsheng as Mackenzie, with supporting roles voiced by the likes of Shang Hua, Zhao Shenzhi and Shi Rong. Their vivid performances added wings to the film — take the bickering scenes between Chamberlain and Jennifer, that pair of sparring lovers, in the compartment: the witty lines and biting sarcasm make you want to applaud the two unsung heroes behind the microphones. So even though the print of The Cassandra Crossing is worn and the images scratched, you can still enjoy a perfect cinematic journey with your eyes closed.
+</p>
+
+<p>
+<strong>Background</strong>
+</p>
+
+<p>
+<strong>Bound for the Cassandra Bridge</strong>
+</p>
+
+<p>
+In 1976, the Cold War was not yet over. Britain, Italy and West Germany jointly produced a film called The Cassandra Crossing. Audiences labeled it a disaster film, and its craft and content became the classic template for the genre thereafter.
+</p>
+
+<p>
+The story is actually quite simple: two terrorists attempt to blow up the WHO laboratory in Geneva. The operation fails; one is shot dead, and the other, contaminated with the lab's virulent pneumonic plague bacteria, flees onto a train bound for Sweden. To make sure the bacteria do not spread, the authorities order the train sealed and rerouted toward the dilapidated Cassandra Bridge — to stage a derailment and bury the truth.
+</p>
+
+<p>
+If you know the film's historical context, you will detect subtleties in the story — in the planned journey versus the rerouted one, in the parade of characters. Thirty years on, close study still reveals mysteries that time has not dissolved. History always rhymes. What makes this film great is that it tells us certain universal truths — including politics, the very thing ordinary people dread and avoid.
+</p>
+
+<p>
+Let us first look at the two routes:<br>Original route: Geneva (Switzerland) → Basel (Switzerland) → Paris (France) → Brussels (Belgium) → Amsterdam (Netherlands) → Copenhagen (Denmark) → Stockholm (Sweden)<br>Rerouted: Geneva (Switzerland) → Nuremberg (former East Germany) → the Cassandra Bridge (Poland)<br>The two routes have nothing in common: the original heads north, while the rerouted train turns east. What could possibly order a train, against the will of a thousand-plus passengers, to head into the unfamiliar East — a turn so drastic it defies belief?
+</p>
+
+<p>
+We must return to the film's opening: the man who walks in as the WHO building's alarms sound is not Geneva security — he is a career American officer with the rank of colonel. It turns out the pneumonic plague bacteria the terrorists were contaminated with was secretly developed by the United States, which assumed no one would question bioweapon research conducted inside a WHO laboratory — until two intruders knocked it over. The scandal of America's secret bioweapon program must never leak. That is the sole reason deciding the fate of everyone on that train.
+</p>
+
+<p>
+In 1976 the Cold War was still on. Across the vast European continent, nations had sorted themselves by interest into two alliances: NATO and the Warsaw Pact, with a remainder of neutral countries. The train was supposed to run from neutral Switzerland to neutral Sweden — but the sudden disaster shattered the alliances in an instant. Basel, Paris and Brussels each refused to let the train stop on their soil, even France and Belgium, fellow NATO members, no exception. A train cannot simply vanish, so the colonel thought of distant Poland, where he had an important contact for a private deal. Poland belonged to the Warsaw Pact, in a state of open hostility with America. Yet Poland agreed to his request: the train would skirt the Carpathians, cross the Cassandra Bridge, and reach the quarantine zone at Janov.
+</p>
+
+<p>
+When the news reached the speeding train, the passengers were still leisurely flirting and chatting. Let us meet the key players as they appear:<br>Colonel Mackenzie — the American soldier, standing for politics, the military and national interest<br>Dr. Stradner — the bacteria researcher, standing for the WHO<br>Dr. Chamberlain — the hero who saves the patients, standing for conscience and humanism<br>Jennifer the writer — Chamberlain's clever ex-wife, standing for love and for bearing witness<br>The old Jewish merchant — standing for the generation that survived the camp massacres<br>The arms dealer's wife — standing for the powerful class that grows rich on war<br>Robby the drug dealer — a former mountaineer, the arms dealer's wife's lover, standing for the opportunist turned over a new leaf<br>The Black policeman — standing for the citizen's protector under normal procedure<br>The sick little girl — standing for hope
+</p>
+
+<p>
+The infected terrorist mingled extensively with the crowds in the carriages; by the time he died in the luggage compartment, other passengers were already falling ill. Amusingly, the two terrorists actually came from neutral Sweden — had it been thirty years later, they would surely have come from Central Asia speaking Arabic.
+</p>
+
+<p>
+Drs. Stradner and Chamberlain soon found a way to control the bacteria — but the colonel would not let the train stop; crashing it at Cassandra was his unalterable decision. The perceptive writer learned from the old Jew's anguish that the Cassandra was a bridge that could not bear the weight. The soldiers guarding the train killed any thought of stopping, so the passengers could only save themselves. Their self-rescue was harrowing: with the Black policeman's single pistol, the passengers, led by Chamberlain, fought the soldiers. Robby the drug dealer and the Black policeman fell one after another; finally the old Jew detonated a gas pipe, blowing open the last carriages. The front carriages, rushing across Cassandra, brought the bridge down; the train plunged into the great river in a huge explosion, and the surface was left covered with the bodies of the innocent.
+</p>
+
+<p>
+The train never reached the Janov quarantine zone; the survivors escaped freely, carrying the bacteria with them. The film chose Janov as the journey's end because it held history's cruelest concentration camp. The old Jew's wife and children died there; he had fled all his life, unwilling to return to Poland, yet his bones would rest at Janov all the same — which is why he said, 'It is fate.'
+</p>
+
+<p>
+The film wants to say too much; every thread provokes questions and pain. At the end, Colonel Mackenzie says to Dr. Stradner: 'Take care of yourself.' It is kindly meant, and his grave expression already foresees what awaits them both. Sure enough, a phone call from the military tells the audience that the colonel and the doctor are now under surveillance. Earlier, facing Stradner's accusations, Mackenzie had answered: 'Though there is no glory in being a soldier now, since I am one, I'll be a good one.' We know that Adolf Eichmann, a key executor of the Auschwitz massacres, defended himself at his 1961 Jerusalem trial: 'I carried out my superiors' orders; carrying out orders is a soldier's duty. My hands have no blood on them.' Similarly feeble is the WHO, crumbling before the American military. Neutral countries cannot guarantee their people's safety, and a laboratory meant to heal has become ideology's accomplice. It is all irony — and all tragedy.
+</p>
+
+<p>
+Twenty years after the end of World War II, who gave Colonel Mackenzie the right to destroy a thousand innocents? The plan was so meticulous — had the weak not risen to resist, the Janov river would hold still more wronged souls. The Italian, British and West German filmmakers boldly drove the train toward a Nazi camp, unmistakably implying that the American military was no different from the Nazis in essence. As long as nations exist, as long as there are ethnic conflicts and contests of interest, any life can be sacrificed. This is a fact we will always face — a fact that has nothing to do with war or peace, for war and peace have only ever been relative. Beneath the calm surface, terrorism and disaster are constant shadows, and it is invariably the defenseless public who are hurt; the more innocent, the more blood must flow. The film's final disaster is no longer the plague bacteria, but political conspiracy. Doctors can control disease; they cannot cure the venom of politics.
+</p>
+
+<p>
+The bridge to Cassandra did collapse — how could it not? The ruined bridge could not bear the rumbling wheels from the West. The eastward journey is bleak and gloomy all the way: abandoned hovels, collapsed churches, desolate graves — all showing the aftermath of politics. After 1991, Poland soon joined NATO and East and West merged into one; the next time someone shoots a disaster film, Poland presumably won't be the choice.
+</p>
+
+<p>
+Just as politics cannot be avoided, neither can nature's viruses. The small consolation is the true feeling found in shared hardship: when tiny human beings face inescapable disaster, the only thing to embrace is the loved one beside them… Dr. Chamberlain and Jennifer the writer reconcile on the brink of death — surely they won't divorce a third time. Love always shows itself on special occasions: though Robby the dealer had been using the arms dealer's wife to traffic drugs across Europe, in the moment before he jumped from the window he entrusted her to Jennifer — one brief sentence, enough to move to tears today's lovers who have lost faith in love.
+</p>
+
+<p>
+The Black policeman gave his life to save the sick little girl — a sign of beautiful hope: the world may drive us to despair, but the future is still worth waiting for. Hendrik Willem van Loon wrote at the end of Tolerance: 'The day will come when intolerance — such as the massacre of innocent prisoners, the burning of widows, the blind worship of a scrap of paper — becomes an absurdity, and tolerance unites the world. It may take ten thousand years, or a hundred thousand. But that day will surely come, hard on the heels of mankind's first historic victory — the conquest of its own fear.' Yet in the postscript to the 1940 reissue, he struck the pessimistic note again: 'this world is not happy,' and 'our age has not yet risen above hatred, cruelty and bigotry!'
+</p>
+
+<p>
+The world is always controlled by evil. When East Germany dissolved, kilometers of declassified archives shocked the world; if the CIA ever published its secrets, it might drive everyone mad with despair. Before the mighty, maddened machinery of the state, how small and innocent the individual is. Yet this is the age we live in, and there is nothing to do but look up to God. The doctor says: 'The infection rate is 60%. Those who don't fall ill have either their own immunity — or God — to thank.'
+</p>
+
+<p>
+Whatever the disaster, ordinary people have lost the right to choose. Ruled by every kind of evil power, where else could the speeding train go but toward the Cassandra Bridge, destined to collapse?
+</p>
+
+<p>
+But thanks to the people's strength, the train was uncoupled, greatly reducing the casualties — yet the hidden hand behind it all was already hatching new schemes…
+</p>
+
+<p>
+本文于2022年5月20日首发于微信公众号，转载至此。
+</p>
+
+<p>
+《卡桑德拉大桥》(THE CASSANDRA CROSSING)<br>&#12304;原片名&#12305;The Cassandra Crossing<br>&#12304;中文名&#12305;卡桑德拉大桥<br>&#12304;出品公司&#12305;Carlton<br>&#12304;出品年代&#12305;1976<br>&#12304;首映日期&#12305;1976年12月18日<br>&#12304;MPAA级别&#12305;R 级<br>&#12304;IMDB链接&#12305;<a href="https://www.imdb.com/title/tt0074292/" target="_blank">http://www.imdb.com/title/tt0074292/</a><br>&#12304;IMDB评分&#12305;5.9/10 (1,017 votes)<br>&#12304;国家&#12305;西德/意大利/英国<br>&#12304;类别&#12305;剧情 / 惊悚 / 动作<br>&#12304;导演&#12305;George P. Cosmatos(乔治·科斯马图斯）
+</p>
+
+<p>
+<strong>内容简介</strong>
+</p>
+
+<p>
+两名国际恐怖分子闯进了日内瓦的国际卫生组织总部，欲实施恐怖袭击，受到了保安人员的迎头阻击，其中一名罪犯被击毙，追捕过程中，警员不小心将实验品病毒给打碎溅到另一名罪犯身上。两名歹徒感染病菌。一名当场被擒。不久腐烂而死。另一名恐怖分子窜到一列开往斯特哥尔摩的火车上，车上快乐的旅客们还不知道自己随时都可以被细菌所染。
+</p>
+
+<p>
+这种病毒染得非常快，很快整个火车上许多人都给传染上了这种病毒，国际警局为这种病毒不传染给其他人，对火车进行控制，并要将其开到卡桑德拉大桥给毁掉……
+</p>
+
+<p>
+此列车不许在任何车站停留。引起人们骚动。车上的科学家通过自己实验方法使许多人解除了病毒，可是上级却不相信他，最后科学家只有用自己的方法进行解决，列车上的人们与细菌研究人员发生冲突，人们纷纷拿起武器。年轻的女作家与其丈夫被卷入战火中。研究组织为接下火车上被染者，必须要通过不能承受该火车重量的“卡桑德拉大桥”。灾难出现了，火车脱轨，大桥爆炸，细菌通过空气在扩散……
+</p>
+
+<p>
+由英国、意大利和德国联合摄制的灾难片《卡桑德拉大桥》，制作于1976年的《卡桑德拉大桥》早在上世纪80年代初便在我国公映，其后也偶尔在电视台播放，所以观众对它的故事并不陌生。这部20多年前的老片几乎没有今天好莱坞大片惯用的电脑高科技，却照样把剧情拍得扣人心弦，而从中传递出的那种面对病毒的大无畏和对病人的爱心及人道主义精神更给人以震撼，该片的结构几乎成了灾难片的经典模式，还影响了后来的许多影片。
+</p>
+
+<p>
+当年《卡》片公映时观众可能只熟悉女主角“詹妮弗”的扮演者索菲亚·罗兰，现在回过头去翻翻主创名单，发现影片阵容是毫不夸张的“豪华大卡斯”：除了索菲亚·罗兰这个意大利“国宝”，导演乔治·潘·考斯马托斯也来自意大利，他的《逃亡雅典娜》、《第一滴血》等作品也是影迷们津津乐道的：男主角“张伯伦大夫”则由英国老牌演员理查·哈里斯担纲，他最广为人知的银幕形象之一是《哈利·波特》前两集中白胡子的“邓不利多校长”，可惜老爷子已于2002年离世，所以不妨让我们再从《卡》片中重温他当年的风采；扮演“麦肯齐上校”的波特·兰卡斯特同样不可小觑，他是1960年奥斯卡和金球奖的双料影帝，其他演员如艾娃·嘉德娜、马丁·西恩等也都是欧美影坛的重量级演员；此外别忘了那个演“海利神父”的黑人明星，他就是大名鼎鼎的前美国橄榄球巨星O.J.辛普森。
+</p>
+
+<p>
+这些大牌演员的高超演技自然无可挑剔，而该片的配音队伍同样是如假包换的“全明星阵容”，影片完全体现了上海电影译制厂黄金时期的水准：毕克的“张伯伦”，丁建华的“詹妮弗”，富润生的“麦肯齐”，就连配角也都由尚华、赵慎之、施融等担纲，他们的传神演绎为影片如虎添翼，比如“张伯伦”和“詹妮弗”这对欢喜冤家在包厢里的几场斗嘴的戏，那些妙趣横生的台词和尖刻的讥诮简直令人要为两位幕后英雄叫好。所以《卡桑德拉大桥》的拷贝尽管已经陈旧、画面有些磨损，但即使只是闭上眼睛欣赏，你都能体验到一次完美的“电影之旅”。
+</p>
+
+<p>
+<strong>影片背景</strong>
+</p>
+
+<p>
+<strong>必定驶向卡桑德拉大桥</strong>
+</p>
+
+<p>
+1976年，冷战还未结束。英国，意大利和西德联合拍摄了一部名为《卡桑德拉大桥》的影片，观众们把它命名为“灾难片”，该影片的拍摄手法与内容成为此后灾难片的经典模式。
+</p>
+
+<p>
+故事其实挺简单，两名恐怖分子想要炸毁位于日内瓦的世界卫生组织实验中心，行动失败，其中一名被击毙，另一名沾染了实验室的肺鼠疫恶性传染病菌逃上了开往瑞典的火车。为确保病菌不被扩散，有关方面下令封死列车，并让列车改道开往年久失修的卡桑德拉大桥，人为制造翻车事故以掩盖真相。
+</p>
+
+<p>
+倘若人们了解影片的时代背景，就会从故事中看出微妙的东西来，比如预定的旅程和改道后的路线，还有出场的各类人物等。尽管三十年已过去，细细研究，我们还是会发现许多并不会随着时光流逝的奥秘，历史总是相似的，这部影片之所以伟大，就在于它告诉了我们一些常规性的哲理，包括我们平常人惟恐避之不及的政治。
+</p>
+
+<p>
+我们先来看看两条行车路线：<br>原路线：日内瓦（瑞士）→巴塞尔（瑞士）→巴黎（法国）→布鲁塞尔（比利时）→阿姆斯特丹（荷兰）→哥本哈根（丹麦）→斯德哥尔摩（瑞典）<br>改后路线：日内瓦（瑞士）→纽伦堡（前东德）→卡桑德拉大桥（波兰）<br>这两条路线完全不搭边，原来的往北，而改道的列车却驶向东方。改道的方位不可思议的相差如此之大，是什么原因可以命令列车不顾1000多名旅客的意见而驶向陌生的东方？
+</p>
+
+<p>
+我们得回返到影片的开头，随着世界卫生组织大楼的警报声走入的并不是日内瓦保安人员，而是一名上校身份的美国职业军人。原来，被恐怖分子沾染的肺鼠疫病菌是美国秘密研究的，他们以为在世界卫生组织的实验室进行生化研究不会有人过问，没想到却被两个闯入者打翻。绝对不能让美国秘密研制生化武器的丑闻泄露，这是主宰那车人命运的唯一理由。
+</p>
+
+<p>
+我们知道1976年冷战还未结束，在广袤的欧洲大陆上，国家按各自的利益结成两种联盟：北约和华约。剩余的一些是中立国。列车本来从中立国瑞士开往中立国瑞典，但是突如其来的灾难让联盟顿时瓦解——巴塞尔、巴黎、布鲁塞尔相继拒绝了列车停靠在她们的领地，即使同属于北约的法国与比利时也不例外。列车不能凭空消失，上校想起了遥远的波兰，他有一个可以私下里交易的重要人物。波兰属于华约组织，与美国正处于敌对的非常时期。但是波兰答应了上校的要求，让列车绕过喀尔巴阡山，穿过卡桑德拉大桥，到亚诺的隔离区。
+</p>
+
+<p>
+消息传到奔驰的火车上时，乘客们还在悠闲地谈情说爱。让我们看看这些分别出场的重要人物：<br>麦肯齐上校——美国军人，代表政治、军事与国家利益<br>医生斯切娜——病菌研究者，代表WHO<br>医生张伯伦——拯救病人的英雄，代表良心与人道主义<br>作家珍妮弗——张伯伦的聪明前妻，代表爱情与记录<br>犹太老商人——代表集中营屠杀下的一代幸存者<br>军火商太太——代表依靠战争而发财的权贵阶级<br>毒贩罗比——前登山运动员，军火商太太的情夫，代表洗心革面的投机分子<br>黑人警察——代表正常程序下的公民保护者<br>生病小女孩——代表希望
+</p>
+
+<p>
+感染的恐怖分子在车厢里大量接触人群，当他在行李间死去时，其他乘客已有发病的趋势。有意思的是这两位恐怖分子竟然来自中立国的瑞典，如果是三十年后的今天，他们一定来自中亚并操着一口阿拉伯语。
+</p>
+
+<p>
+医生斯切娜与张伯伦很快找到了病菌的控制办法，但是上校并不愿意让车停下来，在卡桑德拉坠毁是他不再更改的决定。敏感的女作家从犹太老人的痛苦中知道了卡桑德拉是一座不能承受重量之桥。但把守列车的军人断绝了停车的念头，列车上的乘客只能自救。自救的方式异常惨烈，靠着黑人警察的一把手枪，乘客们在张伯伦的带领下与军人们展开了搏斗。毒贩罗比和黑人警察相继战死，最后犹太老人引爆燃气管，炸开了最后几节车厢。而前面的车厢在冲过卡桑德拉时，大桥坍塌了，列车摔进大河引起大爆炸，河面上漂满了无辜者的死尸。
+</p>
+
+<p>
+列车最终没有抵达亚诺隔离区，幸存的人们带着病菌一起自由逃生。影片选在亚诺作为此行的终点，是因为那里有着史上最残酷的集中营。老犹太的妻子儿女就死在那里，他逃跑了一生不愿回到波兰，但仍旧埋骨亚诺，所以他说“这是宿命。”
+</p>
+
+<p>
+影片想要表述的太多了，无论哪一条线索都会引发人们的追问与痛苦。结尾时麦肯齐上校对斯切娜医生说：“你要珍惜自己。”这句话出自好意，他沉痛的表情已预料到了他自己与斯切娜此后的命运。果然，军方的电话告诉观众，上校与医生都已处于军方的监视之中。此前，麦肯齐面对斯切娜的责问时，他如此回答：“虽然现在当军人很不光彩，既然当了就得当好。”而我们知道的是，奥斯维辛大屠杀的重要执行者艾希曼在1961年的耶路撒冷法庭上为自己辩护：“我执行上级的命令，执行命令乃军人的天职。我的双手没有血迹。”与此类似的是世界卫生组织的无能，在美国军方面前脆弱得不堪一击。中立国不能保证人民的安全，本应救死扶伤的实验室变成了意识形态的帮凶。一切都充满讽刺，又是那么可悲。
+</p>
+
+<p>
+距二战结束已经二十年了，是谁给了麦肯齐上校毁灭1000名无辜者的权利？计划如此周密，如果不是弱小的人们奋起反抗，亚诺河又要增添更多的冤魂。意大利、英国、西德的制片人与导演们大胆地将列车开往纳粹集中营，不言而喻他们是在暗示美国军方无异于纳粹的本质。只要有国家存在，有种族冲突，有利益较量，任何生命都可以牺牲。这是我们永远要面对的事实，这种事实与战争和平无关，战争与和平从来都是相对的。平静的外表下，恐怖主义与灾难如影随形，而最终的受伤者必定是手无寸铁的民众，越是无辜者越要流尽鲜血。影片最后的灾难已不是肺鼠疫菌，而是政治的阴谋。医生们能控制疾病，却不能治好政治的恶毒。
+</p>
+
+<p>
+通往卡桑德拉的大桥果然崩溃了，它怎能不塌呢？破败的大桥承受不了从西方而来的滚滚车轮。东方之旅一路上萧条阴暗，搬离的残舍，倒塌的教堂，冷清的坟茔，无不显示着政治的后遗症。1991年之后的波兰很快加入了北约，东西方融为一体，下次再拍灾难片时想必不会选择波兰了吧。
+</p>
+
+<p>
+如同无法避免政治一样，我们也无法避免自然界的病毒。稍稍能让人心中安慰的是患难中的真情，当渺小的人们面对无法逃避的灾难时，唯一能拥抱的只有身边的亲人。……张伯伦医生与珍妮弗作家在死亡之际破镜重圆，想必他们不会再离第三次婚了。爱情总是在特殊场合显示，贩毒者罗比虽然一直利用军火商太太在欧洲各地贩卖毒品，但他在跳窗前一刻把她托付给珍妮弗，这简短的一句话足以让今天对爱情丧失信心的情人们动容落泪。
+</p>
+
+<p>
+黑人警察为救生病的小女孩付出了生命，这预示着美好的希望——也许世界令人绝望，但毕竟未来可待。房龙在《宽容》的末后写道：“等到象屠杀无辜的俘虏、烧死寡妇和盲目崇拜一纸文字这样的不宽容成为荒诞无稽的事，宽容统一天下的日子就到了。这可能需要一万年，也可能需要十万年。但是，这一天一定会来到，它将紧随着人类获得的第一个胜利——征服自身恐惧心理的载入史册的胜利——而到来。”但是在1940年再版后记中，他又重弹悲观的调子，“这个世界并不幸福”，“我们如今的时代还没有超脱仇恨、残忍和偏执！”
+</p>
+
+<p>
+世界总是被邪恶控制着。东德解体时，解密的几公里长的档案震惊了世界，如果美国中情局某天把它的秘密公布于天下，可能会让所有人发疯和绝望。在强大的疯狂的国家机器面前，个人是多么弱小与无辜。可是我们就生活在这样的时代，除了仰望上帝没有丝毫的办法。医生说，“病菌的感染率是60%，不发病的除了自身免疫力，就得靠上帝了。”
+</p>
+
+<p>
+无论面对什么样的灾难，普通民众都失去了选择权。在各种邪恶力量的主宰下，疾驰的列车除了开往必然坍塌的卡桑德拉大桥，还能开往哪里呢？
+</p>
+
+<p>
+但由于人们的坚强，列车断开，大大减少了伤亡人数，但那幕后的黑手却又打起了坏主意……
+</p>
+
+</div>
+
+</div>
+
+
+<div class="back-to-blog">
+
+<a href="../blog.html">
+
+← Back to Blog
+
+<br>
+
+返回文字列表
+
+</a>
+
+</div>
+
+
+<div class="line"></div>
+
+
+
+
+
+
+
+
+<div class="footer">
+
+
+
+<div class="footer-section">
+
+
+Copyright © 2026 Liam. All Rights Reserved.
+
+
+<br>
+
+
+All original content published on this site is owned by Liam.
+
+
+<br>
+
+
+The copyright of all content published on this site is owned by this platform and/or the original authors/sources.
+
+
+<br>
+
+
+Unauthorized downloading, commercial redistribution (including reproduction), distortion, or modification is prohibited without prior written authorization.
+
+
+</div>
+
+
+
+
+
+
+
+<div class="footer-section">
+
+
+© 2026 Liam 版权所有。
+
+
+<br>
+
+
+本站发布内容之版权归属本站及原作者/来源方。
+
+
+<br>
+
+
+未经书面授权，不得下载、商业性转载（含复制），亦不得歪曲或篡改相关内容。
+
+
+</div>
+
+
+
+
+
+
+
+<div class="built-with">
+
+
+This website is built on 
+<a href="https://pages.github.com/" target="_blank">
+GitHub Pages
+</a>,
+co-created with 
+<a href="https://chat.openai.com/" target="_blank">
+ChatGPT
+</a>,
+and evolving with
+<a href="https://muse.ai" target="_blank">
+Muse
+</a>.
+
+
+
+<br>
+
+
+
+本站基于 
+<a href="https://pages.github.com/" target="_blank">
+GitHub Pages
+</a>
+搭建，由
+<a href="https://chat.openai.com/" target="_blank">
+ChatGPT
+</a>
+协助代码创作，并由
+<a href="https://muse.ai" target="_blank">
+Muse
+</a>
+协助日常维护。
+
+
+
+</div>
+
+
+
+
+
+<div class="legal-link">
+
+<a href="legal.html">
+Privacy · Terms · Integrity
+<br>
+隐私 · 条款 · 完整声明
+</a>
+
+</div>
+
+
+
+
+    
+</div>
+
+
+</div>
+
+
+
+</body>
+
+</html>
