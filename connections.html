@@ -259,6 +259,13 @@ margin:8px 0;
 }
 
 
+.description {
+
+margin-bottom:18px;
+
+}
+
+
 
 
 
@@ -298,7 +305,9 @@ margin-bottom:6px;
 
 width:100%;
 
-border:1px solid #ddd;
+border:1px solid #e4e1dc;
+
+border-radius:6px;
 
 background:#fff;
 
@@ -308,7 +317,31 @@ font-size:14px;
 
 font-family:inherit;
 
-margin-bottom:12px;
+margin-bottom:14px;
+
+outline:none;
+
+transition:border-color 0.2s;
+
+}
+
+
+.form-box input:focus,
+
+.form-box textarea:focus {
+
+border-color:rgb(255,106,0);
+
+}
+
+
+.form-box input::placeholder,
+
+.form-box textarea::placeholder {
+
+font-size:13px;
+
+color:#aaa;
 
 }
 
@@ -342,7 +375,7 @@ background:none;
 
 border:none;
 
-font-size:13px;
+font-size:14px;
 
 font-weight:500;
 
@@ -820,32 +853,20 @@ Leave a message, share your thoughts, or simply say hello.
 
 
 
-<label>
-
-Name / 名字（或昵称）
-
-</label>
-
-
 <input 
 type="text"
 name="name"
+placeholder="Name / 名字（或昵称）"
 >
 
 
 
-
-
-<label>
-
-Email / 邮箱
-
-</label>
 
 
 <input
 type="email"
 name="email"
+placeholder="Email / 邮箱"
 >
 
 
@@ -853,15 +874,9 @@ name="email"
 
 
 
-<label>
-
-Message / 留言内容
-
-</label>
-
-
 <textarea
-name="message">
+name="message"
+placeholder="Message / 留言内容">
 </textarea>
 
 
